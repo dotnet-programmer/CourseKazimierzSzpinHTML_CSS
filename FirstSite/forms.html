@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formularze</title>
+	<link rel="stylesheet" href="css/main-style.css">
+	<link rel="stylesheet" href="css/homework-1.css">
+	<link rel="stylesheet" href="css/forms.css">
+</head>
+
+<body>
+
+	<!-- 
+		formularz
+		- action - adres url tzw. endpointa, który ma zostać wykonany po kliknięciu przycisku typu submit w tym formularzu
+		- method - typ metody która ma zostać wykonana, najczęściej jest to GET lub POST
+		- enctype - parametr wymagany przy wysyłaniu plików przez formularz, oznacza szyfrowanie
+		Powiązane ze sobą pola można opakować w tagi "fieldset", można również dzięki temu dodać ramkę dla tych pól.
+		W celu przesłania danych na serwer poprzez submit bez odświeżania całej strony można użyć Ajax. Po przesłaniu można np. wyświetlić komunikat że wszystko ok albo i nie.
+	 -->
+	<form class="form" action="#" method="POST" enctype="multipart/form-data">
+
+		<!-- imię -->
+		<div class="form__group">
+			<!-- etykieta dla pola, jako wartość for podaje się id pola, dzięki temu klikając na etykietę kursor przenosi się do pola -->
+			<label class="form__label form__label--block" for="firstName">Imię:</label>
+
+			<!-- 
+				pole formularza, wszystkie są elementem input, rodzaj pola zależy od określonego typu 
+				dobrą praktyką jest ustawianie wartości:
+				- id, żeby móc odwoływać się do poszczególnych pól w JavaScript 
+				- name, żeby po tej wartości wysyłać dane na serwer, później na podstawie name i jej wartości serwer może odebrać wartosci dla tego pola
+				Inne przydatne wartości to:
+				- placeholder - tekst, który będzie wyświetlany jak pole jest puste, tekst znika po wpisaniu pierwszego znaku
+			-->
+			<input class="form__text" type="text" id="firstName" name="firstName" placeholder="Wpisz imię" required>
+		</div>
+
+		<!-- nazwisko -->
+		<div class="form__group">
+			<label class="form__label form__label--block" for="lastName">Nazwisko:</label>
+			<input class="form__text" type="text" id="lastName" name="lastName" placeholder="Wpisz nazwisko" required>
+		</div>
+
+		<!-- dodatkowe pole -->
+		<div class="form__group">
+			<label class="form__label form__label--block" for="add">Dodatkowe pole:</label>
+			<!-- 
+				dodatkowe atrybuty:
+				- required - pole jest wymagane
+				- autofocus - pole jest automatycznie zaznaczane (ustawiany focus)
+				- disabled - pole jest zablokowane (nieaktywne), przez co nie da się edytować ani nie zostaje wysłana na serwer
+				- readonly - pole jest aktywne, nie można wprowadzać w nim zmian ale zostaje wysłane na serwer
+				- minlength - minialna wymagana ilość znaków
+				- maxlength - maksymalna dopuszczalna ilość znaków
+				- value - wartość domyślna
+			-->
+			<input class="form__text" type="text" id="add" name="add" placeholder="Dodatkowe pole" required autofocus
+				disabled readonly minlength="3" maxlength="10" value="Test">
+		</div>
+
+		<!-- email -->
+		<div class="form__group">
+			<label class="form__label form__label--block" for="email">E-mail:</label>
+			<!-- jeżeli typ ustawiony na email, to automatycznie włączona jest walidacja adresu czy np. zawiera znak @ -->
+			<input class="form__text" type="email" id="email" name="email" placeholder="Wpisz email">
+		</div>
+
+		<!-- wiek -->
+		<div class="form__group">
+			<label class="form__label form__label--block" for="age">Wiek:</label>
+			<!-- 
+				input dla liczb, typ ustawiony na number, można wpisać tylko cyfry
+				- min - minimalna wartość
+				- max - maksymalna wartość
+				- step - krok, o jaki zwiększy się liczba po kliknięciu przycisku zmieniającego wartość
+			-->
+			<input class="form__text" type="number" id="age" name="age" min="1" max="100" step="2">
+		</div>
+
+		<!-- hasło -->
+		<div class="form__group">
+			<label class="form__label form__label--block" for="password">Hasło:</label>
+			<!-- input dla hasła, typ ustawiony na password -->
+			<input class="form__text" type="password" id="password" name="password">
+		</div>
+
+		<!-- pole wyboru - checkbox -->
+		<div class="form__group">
+			<p class="form__p">Funkcje:</p>
+			<!-- 
+				input jako pole checkbox ma typ określony jako checkbox
+				- id - określa się jako konkretna funkcja którą się zaznacza
+				- name - wiąże checkboxy w grupę, dzięki temu na serwer zostanie przesłana informacja o zaznaczonych checkboxach
+				- value - może być to samo co w id, po zaznaczeniu ta wartość jest przesyłana w grupie którą tworzy name
+				zazwyczaj najpierw jest input a po nim etykieta 
+			-->
+			<input class="form__checkbox" type="checkbox" id="read" name="functions" value="read">
+			<label class="form__label form__label--inline" for="read">Czytanie</label>
+
+			<input class="form__checkbox" type="checkbox" id="create" name="functions" value="create">
+			<label class="form__label form__label--inline" for="create">Tworzenie</label>
+
+			<input class="form__checkbox" type="checkbox" id="edit" name="functions" value="edit">
+			<label class="form__label form__label--inline" for="edit">Edytowanie</label>
+
+			<input class="form__checkbox" type="checkbox" id="delete" name="functions" value="delete">
+			<label class="form__label form__label--inline" for="delete">Usuwanie</label>
+		</div>
+
+		<!-- pole opcji - radiobutton -->
+		<div class="form__group">
+			<p class="form__p">Role:</p>
+			<!-- 
+				input jako pole radiobutton ma typ określony jako radio
+				- id - określa się jako konkretna funkcja którą się zaznacza
+				- name - wiąże radiobuttony w grupę, dzięki temu na serwer zostanie przesłana informacja o zaznaczonych radiobuttonach
+				- value - może być to samo co w id, po zaznaczeniu ta wartość jest przesyłana w grupie którą tworzy name
+				zazwyczaj najpierw jest input a po nim etykieta 
+			-->
+			<input class="form__radio" type="radio" id="admin" name="roles" value="admin">
+			<label class="form__label form__label--inline" for="admin">Administrator</label>
+
+			<input class="form__radio" type="radio" id="mod" name="roles" value="mod">
+			<label class="form__label form__label--inline" for="mod">Moderator</label>
+
+			<input class="form__radio" type="radio" id="user" name="roles" value="user">
+			<label class="form__label form__label--inline" for="user">Użyszkodnik</label>
+		</div>
+
+		<!-- kolor -->
+		<div class="form__group">
+			<label class="form__label form__label--block">Ulubiony kolor:</label>
+			<!-- input dla koloru, typ ustawiony na color -->
+			<input class="form__color" type="color" id="color" name="color">
+		</div>
+
+		<!-- data -->
+		<div class="form__group">
+			<label class="form__label form__label--block" for="birthday">Data urodzenia:</label>
+			<!-- input dla daty, typ ustawiony na date -->
+			<input class="form__date" type="date" id="birthday" name="birthday" value="2023-11-11">
+		</div>
+
+		<!-- wysłanie pliku / załącznik -->
+		<div class="form__group">
+			<label class="form__label form__label--block" for="attachment">Załącznik:</label>
+			<!-- input dla pliku, typ ustawiony na file -->
+			<input class="form__file" type="file" id="attachment" name="attachment">
+		</div>
+
+		<!-- lista pojedynczego wyboru -->
+		<div class="form__group">
+			<label class="form__label form__label--block" for="countries">Kraj:</label>
+			<!-- pole dla listy wyboru, znacznik to select -->
+			<select class="form__select" id="countries" name="countries">
+				<!-- 
+					znacznik option wyświetla poszczególne elementy listy
+					- value - wartość danej pozycji, czyli to co zostanie przesłane na serwer 
+				-->
+				<option value="pl">Polska</option>
+				<option value="de">Niemcy</option>
+				<option value="us">USA</option>
+			</select>
+		</div>
+
+		<!-- lista wielokrotnego wyboru -->
+		<div class="form__group">
+			<label class="form__label form__label--block" for="hobbies">Zainteresowania:</label>
+			<!-- 
+				pole dla listy wyboru, znacznik to select
+				- multiple - dodanie tego atrybutu powoduje że lista jest wielokrotnego wyboru
+			-->
+			<select class="form__select" id="hobbies" name="hobbies" multiple>
+				<!-- 
+					znacznik option wyświetla poszczególne elementy listy
+					- value - wartość danej pozycji, czyli to co zostanie przesłane na serwer 
+				-->
+				<option value="computer">Komputer</option>
+				<option value="programming">Programowanie</option>
+				<option value="sport">Sport</option>
+				<option value="movie">Film</option>
+				<option value="book">Książka</option>
+			</select>
+		</div>
+
+		<!-- 
+			ukryte pola 
+			Takie pola mogą służyć do przesłania danych z serwera do klienta i z powrotem do serwera bez wiedzy użytkownika.
+			Użytkownik może jednak zobaczyć takie pole w narzędziach programistycznych i podmienić wartości, więc to pole należy również weryfikować.
+			Nie umieszczamy tu wrażliwych danych, które mogą byc zmienione.
+			Przydatne są kiedy np. użytkownik edytuje jakieś dane np. dane zamówienia, to można ukryć identyfikator tego zamówienia tak żeby było wiadomo, które zamówienie użytkownik edytował.
+			Po stronie serwera trzeba jeszcze sprawdzic to Id jest prawidłowe i czy użytkownik go nie zmienił, czyli po stronie serwera można sprawdzić czy istnieje zamówienie o takim Id dla tego uzytkownika.
+		-->
+		<!-- input dla pola ukrytego, typ ustawiony na hidden -->
+		<input type="hidden" id="order-id" name="order-id" value="1">
+
+		<!-- komentarz -->
+		<div class="form__group">
+			<label class="form__label form__label--block" for="comment">Komentarz:</label>
+			<!-- pole textarea to input o większej i wielolinijkowej możliwości wpisywania tekstu, można ustawić szerokość i wysokość (rows i cols) -->
+			<textarea class="form__text" id="comment" name="comment" rows="10" cols="50"></textarea>
+		</div>
+
+		<!-- przyciski formularza -->
+		<div class="form__buttons">
+			<!-- input typu reset tworzy przycisk typu reset, który służy do wyczyszczenia danych w całym formularzu -->
+			<input class="form__button form__button--secondary" type="reset" value="Wyczyść formularz">
+
+			<!-- 
+				input typu submit tworzy przycisk typu submit, który służy do wysyłania danych 
+				przycisk tego typu wywołuje akcję określoną w formularzu, czyli wszystkie dane z forumalrza zostają wysłane na adres podany w action
+				wartość value określa tekst wyświetlany na przycisku
+			 -->
+			<input class="form__button form__button--primary" type="submit" value="Wyślij formularz">
+		</div>
+
+	</form>
+
+	<div class="container-btn">
+		<!-- 
+			do zwykłego przycisku można dodać właściwość onclick, do której można podpiąć się za pomocą JavaScript 
+			czyli po kliknięciu przycisku wykona się funkcja JavaScript o podanej nazwie
+		-->
+		<button class="container-btn__button" type="button" onclick="displayAlert()">Kliknij przycisk</button>
+	</div>
+
+	<footer>
+		<a class="homework-1" href="../index.html">Strona główna</a>
+	</footer>
+
+	<!-- sekcja script, w której umieszcza się skrypty JS, musi być w elemencie body, najczęściej dodaje się je na samym dole strony, przez znacznikiem zamykającym body -->
+	<script>
+		function displayAlert() {
+			alert("dzień dobry!");
+		}
+	</script>
+
+</body>
+
+</html>

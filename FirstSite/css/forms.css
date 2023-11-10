@@ -1,0 +1,173 @@
+:root {
+	--simple-box-shadow: 0 0 5px -2px #000000;
+	--button-primary-background: #1760be;
+	--button-primary-background-hover: #1877f2;
+}
+
+.form {
+	padding: 3rem;
+}
+
+.form__group {
+	padding: 1rem;
+}
+
+.form__label {
+	display: inline-block;
+	font-size: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.form__label--block {
+	display: block;
+}
+
+.form__label--inline {
+	height: 30px;
+	margin-right: 2rem;
+	margin-bottom: 0;
+	vertical-align: middle;
+}
+
+.form__text,
+.form__select {
+	width: 100%;
+	font-size: 1.5rem;
+	padding: 1.3rem 2rem;
+	border-radius: 10px;
+	outline: none;
+	border: 0;
+	box-shadow: 0 0 5px -2px rgb(2, 77, 218);
+}
+
+.form__text::placeholder {
+	color: rgb(78, 78, 78);
+	opacity: 1;
+}
+
+.form__text:focus,
+.form__select:focus {
+	box-shadow: 0 0 5px 0 rgb(2, 77, 218);
+}
+
+.form__checkbox,
+.form__radio {
+	width: 2.5rem;
+	height: 2.5rem;
+	margin-right: .5rem;
+}
+
+.form__p {
+	font-size: 1.5rem;
+}
+
+.form__color {
+	height: 60px;
+	width: 60px;
+	border: none;
+	outline: none;
+	padding: 1rem;
+}
+
+.form__date {
+	width: 300px;
+	font-size: 1.5rem;
+	padding: 1.3rem 2rem;
+	border-radius: 10px;
+	outline: none;
+	box-shadow: var(--simple-box-shadow);
+}
+
+.form__file {
+	font-size: 1.5rem;
+	border-radius: 10px;
+	outline: none;
+	border: none;
+	box-shadow: var(--simple-box-shadow);
+	display: inline-block;
+	padding: 1.3rem 2rem;
+	cursor: pointer;
+}
+
+.form__file::file-selector-button {
+	color: #ffffff;
+	padding: 1.3rem 2rem;
+	border-radius: 10px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	box-shadow: var(--simple-box-shadow);
+	background: var(--button-primary-background);
+}
+
+.form__file::file-selector-button:hover {
+	background: var(--button-primary-background-hover);
+}
+
+.form__buttons {
+	padding: 2rem;
+}
+
+.form__button {
+	font-size: 2.2rem;
+	padding: 2rem;
+	cursor: pointer;
+	border-radius: 10px;
+	margin-right: 2rem;
+	border: 0;
+}
+
+.form__button--primary {
+	color: #ffffff;
+	background: var(--button-primary-background);
+}
+
+.form__button--primary:hover {
+	background: var(--button-primary-background-hover);
+}
+
+.form__button--secondary {
+	color: #ffffff;
+	background: #252525;
+}
+
+.form__button--secondary:hover {
+	background: #444343;
+}
+
+.container-btn {
+	position: relative;
+	padding: 10rem 2rem;
+	background: #57a0ff;
+	margin: 5rem 0;
+}
+
+.container-btn__button {
+	/* wyśrodkowanie przycisku w kontenerze */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* 
+		dopisek -ms- oznacza rodzaj przeglądarki, szukaj w google - CSS Vendor prefixes:
+		Android, Chrome, iOS, Safari: -webkit- 
+		Firefox: -moz- 
+		Internet Explorer: -ms- 
+		Opera: -o-
+	*/
+	-ms-transform: translate(-50%, -50%);
+
+	font-size: 3rem;
+	padding: 3rem 5rem;
+	cursor: pointer;
+	border-radius: 20px;
+	border: 0;
+	color: #ffffff;
+	background: #9c0000;
+	box-shadow: 0 0 5px 2px #e40808;
+
+}
+
+.container-btn__button:hover {
+	background: #9e4808;
+}

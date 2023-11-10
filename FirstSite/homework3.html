@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Homework3</title>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+	</style>
+
+	<link rel="stylesheet" href="css/main-style.css">
+	<link rel="stylesheet" href="css/homework-1.css">
+	<link rel="stylesheet" href="css/homework-3.css">
+</head>
+
+<body>
+	<form class="form" action="#" method="post">
+		<h1 class="form__header">Stwórz nowe konto</h1>
+
+		<!-- email -->
+		<div class="form__group">
+			<label class="form__label form__label--block" for="email">Wprowadź adres e-mail:</label>
+			<input class="form__text" type="email" id="email" name="email" placeholder="Wprowadź adres e-mail" required>
+		</div>
+
+		<!-- password -->
+		<div class="form__group">
+			<label class="form__label form__label--block" for="password">Wprowadź hasło:</label>
+			<input class="form__text" type="password" id="password" name="password" placeholder="Wprowadź hasło">
+		</div>
+
+		<!-- confirm password -->
+		<div class="form__group">
+			<label class="form__label form__label--block" for="confirm-password">Potwierdź hasło:</label>
+			<input class="form__text" type="password" id="confirm-password" name="confirm-password"
+				placeholder="Potwierdź hasło">
+		</div>
+
+		<input class="form__button form__button--primary" type="submit" value="Rejestruj">
+	</form>
+
+	<!-- formularz z kursu - przykładowe rozwiązanie -->
+	<section class="register-form">
+		<h1 class="register-form__heading">Stwórz nowe konto</h1>
+		<form action="#" method="post">
+			<div class="register-form__group">
+				<label class="register-form__label" for="email">Wprowadź adres e-mail:</label>
+				<input class="register-form__text" type="email" id="email" name="email"
+					placeholder="Wprowadź adres e-mail">
+			</div>
+			<div class="register-form__group">
+				<label class="register-form__label" for="password">Wprowadź hasło:</label>
+				<input class="register-form__text" type="password" id="password" name="password"
+					placeholder="Wprowadź hasło">
+			</div>
+			<div class="register-form__group">
+				<label class="register-form__label" for="confirm-password">Potwierdź hasło:</label>
+				<input class="register-form__text" type="password" id="confirm-password" name="confirm-password"
+					placeholder="Potwierdź hasło">
+			</div>
+			<input class="register-form__button register-form__button--primary" type="submit" value="Rejestruj">
+		</form>
+	</section>
+
+	<footer>
+		<a class="homework-1" href="../index.html">Strona główna</a>
+	</footer>
+</body>
+
+</html>

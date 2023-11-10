@@ -1,0 +1,133 @@
+:root {
+	--font-color: #000000;
+	--inactive-color: #969696;
+	--simple-box-shadow: 0 0 5px -2px #000000;
+	--button-primary-background: #1760be;
+	--button-primary-background-hover: #1877f2;
+}
+
+/* form */
+.form {
+	padding: 1rem 6rem 4rem 6rem;
+	margin: 5rem;
+	background: #ffffff;
+	box-shadow: 2px 2px 15px 0px #000000;
+}
+
+/* header */
+.form__header {
+	color: var(--font-color);
+}
+
+/* label */
+.form__label {
+	display: inline-block;
+	color: var(--font-color);
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.form__label--block {
+	display: block;
+}
+
+/* input - text */
+.form__text {
+	width: 100%;
+	font-size: 1.5rem;
+	padding: 1rem 2rem;
+	border-radius: 5px;
+	outline: none;
+	margin-bottom: 2rem;
+	border: 2px solid var(--inactive-color);
+}
+
+.form__text::placeholder {
+	color: var(--inactive-color);
+	opacity: 1;
+}
+
+.form__text:focus {
+	border: 2px solid #000000;
+}
+
+/* buttons */
+.form__button {
+	font-size: 1.5rem;
+	padding: 1rem 4rem;
+	cursor: pointer;
+	border-radius: 30px;
+	border: 0;
+	margin-top: 15px;
+}
+
+.form__button--primary {
+	color: #ffffff;
+	background: var(--button-primary-background);
+}
+
+.form__button--primary:hover {
+	background: var(--button-primary-background-hover);
+}
+
+/* ************************************************************************************************************** */
+
+.register-form {
+	margin: 5rem;
+	padding: 3rem 5rem;
+	box-shadow: 8px 8px 24px 0 rgb(66, 68, 90);
+	background: #ffffff;
+}
+
+.register-form__heading {
+	margin: 0 0 1rem 2rem;
+	font-size: 2.8rem;
+	color: #000000;
+}
+
+.register-form__group {
+	padding: 1.5rem 2rem;
+}
+
+.register-form__label {
+	display: inline-block;
+	font-size: 1.3rem;
+	margin-bottom: 1.5rem;
+	color: #000000;
+}
+
+.register-form__text {
+	width: 100%;
+	font-size: 1.4rem;
+	padding: 1.3rem 2rem;
+	border-radius: 5px;
+	outline: none;
+	border: 2px solid rgb(145, 144, 144);
+}
+
+.register-form__text::placeholder {
+	font-size: 1.2rem;
+}
+
+.register-form__text:focus {
+	border: 2px solid #000000;
+}
+
+.register-form__button {
+	font-size: 1.6rem;
+	padding: 1rem 2.8rem;
+	cursor: pointer;
+	border-radius: 20px;
+	border: 0;
+	margin-left: 2rem;
+	margin-top: 2rem;
+}
+
+.register-form__button--primary {
+	color: #ffffff;
+	background: #1877f2;
+}
+
+.register-form__button--primary:hover {
+	background: #3386f1;
+}
