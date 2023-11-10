@@ -1,0 +1,563 @@
+<!-- info, że strona jest w html5 -->
+<!DOCTYPE html>
+
+<!-- określenie języka strony -->
+<html lang="pl">
+
+<!-- część odpowiedzialna za informacje o stronie -->
+
+<head>
+    <!-- kodowanie znaków -->
+    <meta charset="UTF-8">
+
+    <!-- wpis konieczny do działania jako strona responsywna -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- tekst wyświetlany na karcie w przeglądaece -->
+    <title>Tytuł strony</title>
+
+    <!-- pakiet ikon dodanych jako CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- czcionki z googla CDN -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+    </style>
+
+    <!-- import styli z plików .css -->
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- ustawienie styli css bezpośrednio na stronie -->
+    <style>
+        h1 {
+            color: red;
+        }
+    </style>
+</head>
+
+<!-- 
+    w wisual studio code można stosować uproszczone zapisy wykorzystujące "Emmet", czyli auto-wstawianie kodu, np:
+    header.header-class>div.container>ul>li*5{Element $}^span{Prosty tekst} 
+    - nazwa_elementu - wstawienie odpowiedniego znacznika 
+    - .nazwa_klasy - wstawienie kontenera div z klasą o nazwie nazwa_klasy
+    - nazwa_elementu.nazwa_klasy - wstawienie elementu z podaną klasą
+    - znak > - oznacza zagnieżdżenie, czyli wstawienie pomiędzy poprzedzający otwierający i zamykający znacznik
+    - znak * - oznacza powtórzenie danego elementu odpowiednią ilość razy
+    - znaki { } - wewnątrz tych nawiasó wpisuje się treść, jaka zostawnie wstawiona do danego elementu
+    - znak $ - wstawienie numeracji w przypadku użycia znaku *, zaczyna od 1 i zwiększa się o 1
+    - znak ^ - wyjście poziom wyżej, czyli wyjście z zagnieżdzenia o 1 poziom 
+    
+    zapis:
+    header.header-class>div.container>ul>li*5{Element $}^span{Prosty tekst}
+    
+    zostanie zamieniony na: 
+    <header class="header-class">
+        <div class="container">
+            <ul>
+                <li>Element 1</li>
+                <li>Element 2</li>
+                <li>Element 3</li>
+                <li>Element 4</li>
+                <li>Element 5</li>
+            </ul>
+            <span>Prosty tekst</span>
+        </div>
+    </header> 
+-->
+
+<!-- 
+    standard nazewnictwa: BEM - Block__Element--Modifier 
+    oznacza modularny kod, czyli podział kodu na bloki/elementy blokowe i stosować odpowiednie nazewnictwo 
+
+    W BEM istnieje pewna konwencja nazewnictwa klas CSS. Ogólne zasady tego nazewnictwa przedstawiam poniżej:
+    .block - pierwsze słowo w nazwie oznacza, że klasa dotyczy danego bloku
+    __element - słowo poprzedzone dwoma “podkreślnikami” oznacza, że dana klasa dotyczy danego elementu
+    --modifier - słowo poprzedzone dwoma myślnikami określa kasę będącą modyfikatorem
+
+    Korzystając z powyższych zasad możemy tworzyć odpowiednie nazwy klas. I tak, dla całego bloku będzie to po prostu:
+    .block {
+        /* code for the whole block */
+    }
+
+    Każdy blok może mieć wewnątrz różne elementy. Aby utworzyć klasę dla takiego elementu wykorzystujemy nazwę bloku oraz odpowiednią nazwę dla elementu (z dwoma “podkreślnikami”):
+    .block__element {
+        /* code for element of the block */
+    }
+
+    Klasy dla bloków oraz elementów określają zwykle ich ogólne style. Jeśli jakiś blok lub element posiada też jakiś specyficzny wariant, wykorzystujemy do tego modyfikator:
+    .block__element--modifier {
+        /* code for specific variant of the element */
+    }
+
+    .block--modifier {
+        /* code for specific variant of the block */
+    }
+-->
+
+<!-- 
+    CDN - Content Delivery Network 
+    oznacza, że część zasobów takich jak ikony są na zewnętrznych serwerach
+-->
+
+<!-- sekcja w której znajduje się widzialna część strony -->
+
+<body>
+
+    <ul class="homework">
+        <li><a href="/homework1.html">Praca domowa 1</a></li>
+        <li><a href="/homework2.html">Praca domowa 2</a></li>
+    </ul>
+
+    <div class="hero">
+        <div class="hero__bg"></div>
+        <p class="hero__text">Potrzebujesz stronę internetową dla Twojej firmy? Jesteś w dobrym miejscu!</p>
+    </div>
+
+    <div class="container">
+        <i class="fa-solid fa-computer container__icon"></i>
+    </div>
+
+    <div class="sticker">Pozycja fixed</div>
+
+    <header class="header">
+        <img class="header__image" src="./images/header.png" alt="header image"></img>
+        <img class="header__image" src="./images/header.png" alt="header image"></img>
+        <img class="header__image" src="./images/header.png" alt="header image"></img>
+        <img class="header__image" src="./images/header.png" alt="header image"></img>
+    </header>
+
+    <h3>Pseudoelementy</h3>
+    <div class="simple-container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem numquam repudiandae dolorum, deserunt
+        perspiciatis culpa accusantium ipsam voluptatum hic, sapiente ullam. Reprehenderit accusamus, porro harum illum,
+        tempora quam laudantium molestiae, modi voluptates necessitatibus magnam nesciunt. Doloremque autem assumenda
+        voluptates ad porro enim quo quidem, quas tenetur tempora fugit veniam nihil ipsum accusantium nostrum minima
+        maiores sint suscipit vel odit! Facilis blanditiis commodi iusto? Nihil quod aliquam fugiat voluptatibus officia
+        laborum vitae tenetur perferendis repellat quaerat consectetur totam consequuntur amet ea, at porro eum sit
+        ratione odit dolore quos sed. Corrupti pariatur aspernatur rem harum accusamus error, natus omnis sapiente iure?
+    </div>
+
+    <ul class="some-list">
+        <li class="some-element">Element 1</li>
+        <li class="some-element">Element 2</li>
+        <li class="some-element">Element 3</li>
+    </ul>
+
+    <!-- ikona z CDN, potrzebny link do serera CDN w sekcji Head -->
+    <i class="fa-solid fa-computer first-icon"></i>
+
+    <div id="page_top">
+        Tekst <strong>pogrubiony, <em>pogrubiony i pochylony, <u>pogrubiony, pochylony i podkreślony</u></em></strong>
+    </div>
+
+    <h1 style="color: blue;" class="main">Nagłówek h1</h1>
+
+    <p>Nagłówek H1 powinien występować tylko 1x na całej stronie, pozostałe mogą być wielokrotnie powtarzane.</p>
+
+    <h2 class="header-h2">Nagłówek h2</h2>
+
+    <a href="#summary">Hiperłącze - przejdź do podsumowania</a>
+
+    <h3 class="header-h3">Nagłówek h3</h3>
+
+    <h4 id="my-header-h4">Nagłówek h4</h4>
+
+    <h5>Nagłówek h5</h5>
+
+    <h6>Nagłówek h6</h6>
+
+    <p>
+        lorem x 50:
+        <br>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam aliquam quibusdam itaque adipisci ipsam
+        cumque
+        vero consequuntur. Ipsum impedit quisquam eaque reprehenderit laborum?
+        Porro iste dolorem nisi animi minima
+        mollitia labore, possimus in impedit placeat iure quo officia vel non quia perspiciatis obcaecati magni
+        sunt
+        voluptate aperiam laborum! Velit, dolore.
+        <br><br>
+        tag &#60;br&#62; to nowa linia, zalecany do używania jedynie w tekście, jeżeli trzeba odsunąć jakieś
+        kontenery
+        od siebie, to lepiej zrobić to marginesami
+    </p>
+
+    <div class="circle"></div>
+
+    <div class="div1">div 1</div>
+    <div class="div2">div 2</div>
+
+    <div class="box">
+        <div class="inner-box"></div>
+        <div class="inner-box"></div>
+        <div class="inner-box"></div>
+    </div>
+
+    <div class="rectangle box-shadow"></div>
+
+    <article class="article">
+        <p class="header-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus quibusdam, quam
+            unde, perspiciatis velit facilis consequatur a minus magnam, suscipit iure obcaecati rem enim! Iusto quasi
+            nesciunt earum in ducimus dicta. Laboriosam repudiandae sint labore quae nulla vitae dolorem. Tempore.
+        </p>
+        <img class="header-img" src="images/header.png" alt="logo image, ten opis widoczny dla robotów wyszukiwarek"
+            width="200px" />
+        <p class="footer-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, voluptatibus? Lorem ipsum
+            dolor sit, amet consectetur adipisicing elit. Omnis quam pariatur aliquam sequi nesciunt ratione adipisci
+            nulla, obcaecati saepe laboriosam explicabo corrupti, sunt cum vel corporis dolorem rerum error aperiam?
+        </p>
+        <p class="some-text">
+            Lorem ipsum dolor sit.
+        </p>
+        <p class="some-text-2">
+            Lorem ipsum dolor sit.
+        </p>
+    </article>
+
+    <h3>Przydatne linki:</h3>
+    <ul class="links">
+        <li><a href="https://www.modestprogrammer.pl">Blog C# - link otwierany na tej stronie</a></li>
+        <li><a class="link" href="https://www.modestprogrammer.pl" target="_blank">Blog C# - link otwierany w
+                nowej karcie</a></li>
+        <li><a href="https://www.modestprogrammer.pl" target="_blank">Blog C# - link otwierany w nowej karcie</a></li>
+        <li><a href="https://www.modestprogrammer.pl" target="_blank">Blog C# - link otwierany w nowej karcie</a></li>
+        <li><a href="https://www.modestprogrammer.pl" target="_blank">Blog C# - link otwierany w nowej karcie</a></li>
+        <li><a href="https://www.modestprogrammer.pl" target="_blank">Blog C# - link otwierany w nowej karcie</a></li>
+        <li><a href="https://www.modestprogrammer.pl" target="_blank">Blog C# - link otwierany w nowej karcie</a></li>
+        <li><a href="https://www.modestprogrammer.pl" target="_blank">Blog C# - link otwierany w nowej karcie</a></li>
+        <li><a href="https://www.modestprogrammer.pl" target="_blank">Blog C# - link otwierany w nowej karcie</a></li>
+        <li><a href="https://www.modestprogrammer.pl" target="_blank">Blog C# - link otwierany w nowej karcie</a></li>
+        <li><a href="https://www.modestprogrammer.pl" target="_blank">Blog C# - link otwierany w nowej karcie</a></li>
+        <li><a href="/contact.html">Podstrona tej strony - kontakt</a></li>
+    </ul>
+
+    </p>
+    <p>Kontenery - HTML Block and Inline Elements w w3school:
+    <ul>
+        <li>div wypełnia całą szerokość</li>
+        <li>span zajmuje tylko tyle, ile zajmuje zawartość</li>
+    </ul>
+    <div>Pierwszy div</div>
+    <div>Drugi div</div>
+    <div>Trzeci div</div>
+    <div>Czwarty div</div>
+    <div>Piąty div</div>
+    <br>
+    <span>Pierwszy span</span>
+    <span>Drugi span</span>
+    <span>Trzeci span</span>
+    <span>Czwarty span</span>
+    <span>Piąty span</span>
+
+    <h3>Lista uporządkowana - OL (Order List) - LI (List Item) </h3>
+    <ol class="links-2">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+        <li>item5</li>
+        <li>item6</li>
+    </ol>
+
+    <h3>Lista nieuporządkowana - UL (Unorder List) - LI (List Item) </h3>
+    <ul class="links-3">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+        <li>item5</li>
+        <li>item6</li>
+    </ul>
+
+    <h3 class="highlight">Przykład tabeli</h3>
+    <table class="table table-main">
+        <thead>
+            <tr class="highlight">
+                <th>nagłówek 1</th>
+                <th>nagłówek 2</th>
+                <th>nagłówek 3</th>
+                <th>nagłówek 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="first">
+                <td>dane w kolumnie 1</td>
+                <td>dane w kolumnie 2</td>
+                <td>dane w kolumnie 3</td>
+                <td>dane w kolumnie 4</td>
+            </tr>
+            <tr class="second">
+                <td>dane w kolumnie 1</td>
+                <td>dane w kolumnie 2</td>
+                <td>dane w kolumnie 3</td>
+                <td>dane w kolumnie 4</td>
+            </tr>
+            <tr class="second">
+                <td class="direct-descendant">dane w kolumnie 1</td>
+                <td>dane w kolumnie 2</td>
+                <td>dane w kolumnie 3</td>
+                <td>dane w kolumnie 4</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4">footer na 4 kolumny</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h3 class="highlight">Przykład tabeli 2</h3>
+    <table class="table-2">
+        <thead class="table-head">
+            <tr>
+                <th class="table-th table-col-first">nagłówek 1</th>
+                <th class="table-th table-col-second">nagłówek 2</th>
+                <th class="table-th table-col-third">nagłówek 3</th>
+                <th class="table-th table-col-fourth">nagłówek 4</th>
+            </tr>
+        </thead>
+        <tbody class="table-body">
+            <tr>
+                <td class="table-td">dane w kolumnie 1</td>
+                <td class="table-td">dane w kolumnie 2</td>
+                <td class="table-td">dane w kolumnie 3</td>
+                <td class="table-td">dane w kolumnie 4</td>
+            </tr>
+            <tr>
+                <td class="table-td">dane w kolumnie 1</td>
+                <td class="table-td">dane w kolumnie 2</td>
+                <td class="table-td">dane w kolumnie 3</td>
+                <td class="table-td">dane w kolumnie 4</td>
+            </tr>
+            <tr>
+                <td class="table-td">dane w kolumnie 1</td>
+                <td class="table-td">dane w kolumnie 2</td>
+                <td class="table-td">dane w kolumnie 3</td>
+                <td class="table-td">dane w kolumnie 4</td>
+            </tr>
+            <tr>
+                <td class="table-td">dane w kolumnie 1</td>
+                <td class="table-td">dane w kolumnie 2</td>
+                <td class="table-td">dane w kolumnie 3</td>
+                <td class="table-td">dane w kolumnie 4</td>
+            </tr>
+            <tr>
+                <td class="table-td">dane w kolumnie 1</td>
+                <td class="table-td">dane w kolumnie 2</td>
+                <td class="table-td">dane w kolumnie 3</td>
+                <td class="table-td">dane w kolumnie 4</td>
+            </tr>
+            <tr>
+                <td class="table-td">dane w kolumnie 1</td>
+                <td class="table-td">dane w kolumnie 2</td>
+                <td class="table-td">dane w kolumnie 3</td>
+                <td class="table-td">dane w kolumnie 4</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4" class="table-td">footer na 4 kolumny</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div class="card">
+        <h5>Testowy nagłówek</h5>
+        <div class="card-div">
+            <h6 class="card-header">Nagłówek 6</h6>
+            <p class="card-p">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo laborum ea pariatur nam veniam
+                repellendus ipsam corrupti expedita ratione velit.
+            </p>
+        </div>
+    </div>
+
+    <span id="span-id" class="span-class">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero doloremque quasi repellat qui, facilis quaerat
+        veniam doloribus iure ea sequi atque, nisi magnam dolorem! Soluta ipsam sint iure doloribus quisquam?
+    </span>
+
+    <ul class="list">
+        <li class="list-element">stylowanie listy - list item 1</li>
+        <li class="list-element">stylowanie listy - list item 2</li>
+        <li class="list-element">stylowanie listy - list item 3</li>
+    </ul>
+
+    <h3>Zdjęcie</h3>
+    <img src="images/header.png" alt="logo image, ten opis widoczny dla robotów wyszukiwarek" width="500px" />
+
+    <h3>Zdjęcie jako link</h3>
+    <a href="https://www.modestprogrammer.pl">
+        <img src="images/header.png" alt="logo image, ten opis widoczny dla robotów wyszukiwarek" width="500px" />
+    </a>
+
+    <h3>Zdjecie z neta a nie z dysku</h3>
+    <img src="https://www.w3schools.com/images/colorpicker2000.png" alt="color picker" width="100px" />
+
+    <h3>Stylowanie zdjęcia</h3>
+    <img class="my-image" src="images/header.png" alt="logo image, ten opis widoczny dla robotów wyszukiwarek" />
+
+    <!-- <h3>Wideo - src wewnątrz tagu:</h3>
+    <video src="Video/panda.mp4" type="video/mp4" width="20%" controls autoplay muted controlsList="nodownload"></video>
+
+    <h3>Wideo - dodatkowy tag source:</h3>
+    <video width="20%" controls>
+        <source src="Video/panda.mp4" type="video/mp4">
+    </video> -->
+
+    <h3>Wideo:</h3>
+    <table>
+        <tr>
+            <td>Wideo - src wewnątrz tagu:</td>
+            <td>Wideo - dodatkowy tag source:</td>
+        </tr>
+        <tr>
+            <td>
+                <video src="Video/panda.mp4" type="video/mp4" width="50%" controls autoplay muted
+                    controlsList="nodownload"></video>
+            </td>
+            <td>
+                <video width="50%" controls>
+                    <source src="Video/panda.mp4" type="video/mp4">
+                </video>
+            </td>
+        </tr>
+    </table>
+
+    <h3>Audio</h3>
+    <audio controls>
+        <source src="Audio/panda.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="units">
+        <p class="units-paragraph">
+            Tekst
+        </p>
+        <div class="unit">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae ex ea molestiae sapiente, consectetur
+            tempora necessitatibus. Adipisci velit minima distinctio ipsa hic consectetur! Vitae sapiente, velit quos
+            eos ipsum aliquid!
+        </div>
+        <div class="unit">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae ex ea molestiae sapiente, consectetur
+            tempora necessitatibus. Adipisci velit minima distinctio ipsa hic consectetur! Vitae sapiente, velit quos
+            eos ipsum aliquid!
+        </div>
+        <div class="unit">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae ex ea molestiae sapiente, consectetur
+            tempora necessitatibus. Adipisci velit minima distinctio ipsa hic consectetur! Vitae sapiente, velit quos
+            eos ipsum aliquid!
+        </div>
+    </div>
+
+    <div class="units-2">
+        <p class="units-paragraph">
+            Tekst
+        </p>
+        <div class="unit">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae ex ea molestiae sapiente, consectetur
+            tempora necessitatibus. Adipisci velit minima distinctio ipsa hic consectetur! Vitae sapiente, velit quos
+            eos ipsum aliquid!
+        </div>
+        <div class="unit">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae ex ea molestiae sapiente, consectetur
+            tempora necessitatibus. Adipisci velit minima distinctio ipsa hic consectetur! Vitae sapiente, velit quos
+            eos ipsum aliquid!
+        </div>
+        <div class="unit">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae ex ea molestiae sapiente, consectetur
+            tempora necessitatibus. Adipisci velit minima distinctio ipsa hic consectetur! Vitae sapiente, velit quos
+            eos ipsum aliquid!
+        </div>
+    </div>
+
+    <h3>Użycie BEM</h3>
+    <nav class="menu">
+        <ul class="menu__list">
+            <li class="menu__item menu__item--active menu__item--small">item 1</li>
+            <li class="menu__item">item 2</li>
+            <li class="menu__item">item 3</li>
+            <li class="menu__item">item 4</li>
+            <li class="menu__item">item 5</li>
+        </ul>
+
+        <button class="button menu__button button--succes">
+            <img class="button__image" src="./Images/header.png" alt="alt txt">
+            <div class="button__text">Kliknij</div>
+        </button>
+
+        <button class="button button--primary menu__button">
+            <img class="button__image" src="./Images/header.png" alt="alt txt">
+            <div class="button__text">Kliknij</div>
+        </button>
+
+        <button class="button menu__button button--danger">
+            <img class="button__image" src="./Images/header.png" alt="alt txt">
+            <div class="button__text">Kliknij</div>
+        </button>
+    </nav>
+
+    <button class="button button--primary">
+        <img class="button__image" src="./Images/header.png" alt="alt txt">
+        <div class="button__text">Kliknij</div>
+    </button>
+
+    <button class="button button--space">
+        <img class="button__image" src="./Images/header.png" alt="alt txt">
+        <div class="button__text">Kliknij</div>
+    </button>
+
+    <p class="text">
+        Jakiś długi wypełniacz tekstu
+        <br>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia fugit minus rem odit voluptas. Fuga tempore
+        officia unde iure amet quo vel ad in, ratione deserunt reprehenderit corrupti? Nulla distinctio cum dolorum
+        obcaecati eaque tenetur quis dolores sapiente. Veniam deleniti ab culpa accusamus animi illo fugit alias. Optio
+        obcaecati impedit sint voluptatibus, ut facere voluptates iure aliquid nihil doloremque provident doloribus
+        dolor laudantium, non, alias similique? Mollitia reiciendis adipisci sint officiis non nulla. Laborum a qui
+        doloribus quae, animi sit deleniti similique dicta tempora assumenda excepturi ullam pariatur explicabo,
+        laudantium repudiandae nobis dignissimos minus quis quidem beatae, rerum libero maiores. Consequatur,
+        exercitationem impedit! Modi asperiores exercitationem magni non quod doloremque! Fugiat dignissimos veritatis
+        qui nostrum ea sequi ullam quo expedita nihil dolor, illum facere quaerat atque id mollitia cupiditate
+        similique, suscipit quia explicabo deserunt soluta necessitatibus. Aut error veniam soluta iste facilis eius
+        ratione omnis consequatur itaque nobis! Atque, error necessitatibus animi nam iste, enim itaque fuga adipisci
+        mollitia quas dolore, ipsum harum neque doloribus! Fuga, nam deleniti natus, enim pariatur facere distinctio
+        quia voluptate asperiores recusandae, dolor dicta. Provident beatae, expedita magnam officiis accusantium at
+        aspernatur modi veritatis ut repellendus praesentium eos officia quae, est quidem quisquam fugiat! Fuga!
+    </p>
+
+    <h3>iframe</h3>
+    <p>
+        iframe oznacza inline frame, czyli ramka umieszczona inline, czyli wbudowana bezpośrednio do strony
+        internetowej. <br>
+        Czyli to taki widżet umieszczony w treści strony internetowej. <br>
+        Za pomoca iframe można wstawić jakiś kod html na stronie internetowej. <br>
+        Może to być cała inna strona albo tylko jej kawałek.
+    </p>
+
+    <iframe src="https://www.modestprogrammer.pl" frameborder="0" width="100%" height="300px"></iframe>
+
+    <iframe width="800" height="600" src="https://www.youtube.com/embed/GeTbtL6Pnjk"
+        title="JAK ZOSTAĆ PROGRAMISTĄ C#/.NET w 2023 ROKU (OD ZERA) – ZARABIAJ PONAD 15 000 ZŁ MIESIĘCZNIE!"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+
+    <h3 id="summary">Podsumowanie</h3>
+
+    &#169; - copyright &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; znak specjalny nbsp; to spacje
+
+    <a href="#page_top">Przejdź na górę strony</a>
+
+</body>
+
+</html>
