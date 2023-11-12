@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Layouts</title>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+	</style>
+
+	<link rel="stylesheet" href="css/main-style.css">
+	<link rel="stylesheet" href="css/layout.css">
+</head>
+
+<body>
+
+	<!-- 
+		Flexbox - elastyczny kontener
+		Dzięki niemu można dowolnie umieścić elementy (dzieci) w nadrzędnym elemencie (rodzicu).
+	-->
+
+	<nav class="menu">
+		<ul class="menu__list">
+			<li class="menu__item">Strona główna</li>
+			<li class="menu__item">Blog</li>
+			<li class="menu__item">Nowości</li>
+			<li class="menu__item">Sklep</li>
+			<li class="menu__item">Youtube</li>
+			<li class="menu__item">Kontakt</li>
+			<li class="menu__item">O nas</li>
+		</ul>
+	</nav>
+
+	<div class="flex-container">
+		<div class="flex-item flex-item__first">1</div>
+		<div class="flex-item">2</div>
+		<div class="flex-item">3</div>
+		<div class="flex-item">4</div>
+		<div class="flex-item">5</div>
+		<div class="flex-item">6</div>
+		<div class="flex-item">7</div>
+		<div class="flex-item">8</div>
+		<div class="flex-item">9</div>
+		<div class="flex-item">10</div>
+	</div>
+
+	<div class="rectangle">
+		<div class="circle"></div>
+	</div>
+
+	<!-- grid - siatka -->
+	<div class="grid-container">
+		<div class="grid-item">1</div>
+		<div class="grid-item">2</div>
+		<div class="grid-item">3</div>
+		<div class="grid-item">4</div>
+		<div class="grid-item">5</div>
+		<div class="grid-item">6</div>
+		<div class="grid-item item-first">7</div>
+		<div class="grid-item">8</div>
+		<div class="grid-item">9</div>
+		<div class="grid-item">10</div>
+		<div class="grid-item">11</div>
+		<div class="grid-item item-last">12</div>
+	</div>
+
+	<div class="gallery">
+		<img src="Images/gallery/2.jpg" alt="2" class="gallery__img">
+		<img src="Images/gallery/3.jpg" alt="3" class="gallery__img">
+		<img src="Images/gallery/4.jpg" alt="4" class="gallery__img">
+		<img src="Images/gallery/5.jpg" alt="5" class="gallery__img">
+		<img src="Images/gallery/6.jpg" alt="6" class="gallery__img">
+		<img src="Images/gallery/1.jpg" alt="1" class="gallery__img">
+		<img src="Images/gallery/7.jpg" alt="7" class="gallery__img">
+		<img src="Images/gallery/8.jpg" alt="8" class="gallery__img">
+		<img src="Images/gallery/9.jpg" alt="9" class="gallery__img">
+		<img src="Images/gallery/10.jpg" alt="10" class="gallery__img">
+		<img src="Images/gallery/11.jpg" alt="11" class="gallery__img">
+		<img src="Images/gallery/12.jpg" alt="12" class="gallery__img">
+	</div>
+
+	<!-- layout - szkielet strony -->
+	<div class="wrapper">
+		<header class="header">HEADER</header>
+		<aside class="aside">MENU</aside>
+		<main class="content">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ratione voluptas obcaecati
+			ab laborum molestias, iste consequatur unde magnam, accusamus labore doloribus natus placeat perspiciatis
+			cum ipsa id eveniet laudantium suscipit perferendis quod ut minima consectetur. Beatae molestiae autem quasi
+			sed quisquam, vero, doloribus ullam non voluptatem impedit quam nisi corporis mollitia id optio expedita
+			nemo modi iusto, vel minima sapiente nostrum exercitationem hic fugit! Sed a facere aliquam commodi dolorem
+			rem ex quasi alias quam molestias tenetur veritatis distinctio laudantium explicabo, ducimus atque.
+			Accusantium quaerat magnam ipsam, modi officia ducimus perferendis tempora amet corporis odit fuga autem
+			sapiente error.
+		</main>
+		<footer class="footer">FOOTER</footer>
+	</div>
+</body>
+
+</html>
