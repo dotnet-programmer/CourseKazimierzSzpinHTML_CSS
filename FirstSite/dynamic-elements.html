@@ -15,12 +15,13 @@
 
 <body>
 
+	<button class="btn-gif" onclick="toggleSpinner()">Przełącz GIFa</button>
+
+
 	<div class="wrapper">
 		<div class="loading-overlay">
 			<div class="loading-gif"></div>
 		</div>
-
-		<button>Test</button>
 
 		<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni iure sint consequuntur id numquam possimus
 			molestiae deleniti totam aspernatur placeat! Repellat omnis quis placeat labore voluptate minima ex harum
@@ -119,6 +120,44 @@
 	<footer>
 		<a class="homework-1" href="../index.html">Strona główna</a>
 	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+		integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer">
+		</script>
+
+
+	<!-- 
+		frameworki javascript:
+		jest kilka frameworkó umożliwiających tworzenie aplikacji SPA, czyli Single Page Application
+		dzięki tym frameworkom można stworzyć całą aplikację po stronie frontendu
+		- Angular - 
+		- React - 
+		- VUE - 
+	 -->
+
+	<script>
+		// javascript
+		function toggleSpinner() {
+			var loadingOverlay = document.getElementsByClassName("loading-overlay")[0];
+			loadingOverlay.style.display = window.getComputedStyle(loadingOverlay).display === "none" ? "flex" : "";
+		}
+
+		// jquery
+		$(document).ready(function () {
+			// wypisanie tekstu w konsoli
+			console.log("strona została załadowana");
+
+			// dodanie obramowania do elementów z klasą "card"
+			var card = $(".card");
+			card.css("border", "15px solid yellow")
+
+			card.click(function () {
+				var animated = $(".animated");
+				animated.toggleClass("hidden");
+			});
+		})
+	</script>
 </body>
 
 </html>

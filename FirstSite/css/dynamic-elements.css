@@ -185,8 +185,8 @@
 }
 
 .loading-overlay {
-	/* display: none; */
-	display: flex;
+	display: none;
+	/* display: flex; */
 	justify-content: center;
 	align-items: center;
 	background: rgba(59, 55, 55, 0.3);
@@ -374,4 +374,15 @@
 	opacity: 1;
 	color: #eaec74;
 	transform: scale(1.1);
+}
+
+/* java script */
+.btn-gif {
+	font-size: 3rem;
+	margin: 4rem;
+}
+
+/* jQuery */
+.hidden {
+	display: none;
 }
