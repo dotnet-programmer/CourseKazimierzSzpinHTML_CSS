@@ -233,7 +233,7 @@
 .item-last {
 	grid-row: 5 / span 2;
 	grid-column: 3 / span 2;
-	/* to samo w 1 linii: start-row start-column end-row wnd-column*/
+	/* to samo w 1 linii: start-row start-column end-row end-column*/
 	grid-area: 5 / 3 / span 2 / span 2;
 }
 
