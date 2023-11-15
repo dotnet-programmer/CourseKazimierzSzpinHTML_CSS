@@ -232,26 +232,27 @@
 	background: #d10707;
 	border-radius: 50%;
 	margin: 20px;
+	animation: 3s linear infinite go-left-right;
 }
 
 .balls__ball--animation1 {
-	animation: 3s linear 0.2s infinite go-left-right;
+	animation-delay: .2s
 }
 
 .balls__ball--animation2 {
-	animation: 3s linear 0.4s infinite go-left-right;
+	animation-delay: .4s
 }
 
 .balls__ball--animation3 {
-	animation: 3s linear 0.6s infinite go-left-right;
+	animation-delay: .6s
 }
 
 .balls__ball--animation4 {
-	animation: 3s linear 0.8s infinite go-left-right;
+	animation-delay: .8s
 }
 
 .balls__ball--animation5 {
-	animation: 3s linear 1s infinite go-left-right;
+	animation-delay: 1s
 }
 
 @keyframes go-left-right {
