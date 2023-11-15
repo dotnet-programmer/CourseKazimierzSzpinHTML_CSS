@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Faktura</title>
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+	<!-- heading -->
+	<header class="block heading">
+		<div class="container grid grid--1x2">
+			<h1 class="heading__title heading__title-primary">Fakturowo</h1>
+			<section class="heading__invoice-info">
+				<div class="card">
+					<h3 class="card__header-text">Miejsce wystawienia</h3>
+					<div class="card__body">
+						<span class="card__value">Piotrków Trybunalski</span>
+					</div>
+				</div>
+				<div class="card">
+					<h3 class="card__header-text">Data wystawienia</h3>
+					<div class="card__body">
+						<span class="card__value">03-02-2021</span>
+					</div>
+				</div>
+				<div class="card">
+					<h3 class="card__header-text">Data wykonania usługi</h3>
+					<div class="card__body">
+						<span class="card__value">03-02-2021</span>
+					</div>
+				</div>
+			</section>
+		</div>
+	</header>
+
+	<!-- companies -->
+	<section class="block companies">
+		<div class="container grid grid--1x2">
+			<div class="card">
+				<h3 class="card__header-text">Sprzedawca</h3>
+				<div class="card__body">
+					<span class="card__value card__value--block">Usługi Informatyczne Jan Nowak</span>
+					<span class="card__value card__value--block">NIP: 1234121231</span>
+					<span class="card__value card__value--block">Kowalska 12</span>
+					<span class="card__value card__value--block">00-001 Warszawa</span>
+				</div>
+			</div>
+			<div class="card">
+				<h3 class="card__header-text">Nabywca</h3>
+				<div class="card__body">
+					<span class="card__value card__value--block">ABC INFO Andrzej Kowalski</span>
+					<span class="card__value card__value--block">NIP: 3124444421</span>
+					<span class="card__value card__value--block">Nowakowska 12</span>
+					<span class="card__value card__value--block">22-102 Góra Kalwaria</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- invoice -->
+	<section class="block invoice">
+		<div class="container">
+			<h2 class="invoice__heading">Faktura VAT 02/02/2021</h2>
+			<table class="invoice__table">
+				<thead class="invoice__thead">
+					<tr>
+						<th class="invoice__th">Lp.</th>
+						<th class="invoice__th invoice__th--wider">
+							Nazwa towaru lub usługi
+						</th>
+						<th class="invoice__th">Jm.</th>
+						<th class="invoice__th">Ilość</th>
+						<th class="invoice__th">Cena netto</th>
+						<th class="invoice__th invoice__th--only-screen">
+							Wartość netto
+						</th>
+						<th class="invoice__th">Stawka VAT</th>
+						<th class="invoice__th invoice__th--only-screen">Kwota VAT</th>
+						<th class="invoice__th">Wartość brutto</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="invoice__td">1</td>
+						<td class="invoice__td invoice__td--text-left">
+							Instalacja systemu operacyjnego
+						</td>
+						<td class="invoice__td">usł.</td>
+						<td class="invoice__td">1</td>
+						<td class="invoice__td">1 000,08</td>
+						<td class="invoice__td invoice__td--only-screen">1 000,08</td>
+						<td class="invoice__td">23%</td>
+						<td class="invoice__td invoice__td--only-screen">230,02</td>
+						<td class="invoice__td">1 230,10</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th class="invoice__th invoice__th--label" colspan="5">W tym</th>
+						<th class="invoice__th invoice__th--only-screen">1 000,08</th>
+						<th class="invoice__th">23%</th>
+						<th class="invoice__th invoice__th--only-screen">230,02</th>
+						<th class="invoice__th">1 230,10</th>
+					</tr>
+					<tr>
+						<th class="invoice__th invoice__th--label" colspan="5">Razem</th>
+						<th class="invoice__th invoice__th--only-screen">1 000,08</th>
+						<th class="invoice__th"></th>
+						<th class="invoice__th invoice__th--only-screen">230,02</th>
+						<th class="invoice__th">1 230,10</th>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</section>
+
+	<!-- summary -->
+	<section class="block summary">
+		<div class="container grid grid--1x2">
+			<div>
+				<div class="summary__content grid grid--summary">
+					<span>Sposób płatności</span>
+					<span>przelew w terminie 2 dni</span>
+				</div>
+				<div class="summary__content grid grid--summary">
+					<span>Termin płatności</span>
+					<span>05-02-2021</span>
+				</div>
+				<div class="summary__content grid grid--summary">
+					<span>Numer konta</span>
+					<span>15 1010 1371 0020 4622 3100 0000</span>
+				</div>
+			</div>
+			<div>
+				<div class="summary__content summary__content--bold">
+					<span>Do zapłaty</span>
+					<span>1 230,10 PLN</span>
+				</div>
+				<div class="summary__content">
+					<span>Słownie</span>
+					<span>jeden tysiąc dwieście trzydzieści 10/100 PLN</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- signatures -->
+	<section class="block signature">
+		<div class="container grid grid--1x2">
+			<div class="signature__content">
+				<span class="signature__name">Jan Nowak</span>
+				<small class="signature__label">Podpis osoby upoważnionej do wystawienia</small>
+			</div>
+			<div class="signature__content">
+				<span class="signature__name">&nbsp;</span>
+				<small class="signature__label">Podpis osoby upoważnionej do odbioru</small>
+			</div>
+		</div>
+	</section>
+
+	<!-- footer -->
+	<footer class="block footer">
+		<div class="container flex">
+			<span>Fakturowo.pl</span>
+			<span>Strona 1/1</span>
+		</div>
+	</footer>
+</body>
+
+</html>
