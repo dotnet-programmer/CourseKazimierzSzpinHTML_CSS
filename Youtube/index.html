@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>YouTube</title>
+	<link rel="icon" href="images/favicon.ico" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+	<!-- header -->
+	<header class="header">
+		<div class="header__left">
+			<i class="header__menu-icon fa-solid fa-bars"></i>
+			<div class="header__logo">
+				<img class="header__img" src="images/logo.png" alt="Logo YouTube" />
+				<span class="header__lang">PL</span>
+			</div>
+		</div>
+		<div class="header__mid">
+			<div class="header__search-form">
+				<input class="header__search-input" type="text" placeholder="Szukaj" />
+				<i class="header__search-icon fa-solid fa-magnifying-glass"></i>
+				<i class="header__keyboard-icon fa-solid fa-keyboard"></i>
+			</div>
+			<i class="header__search-btn fa-solid fa-magnifying-glass"></i>
+			<i class="header__search-mobile-btn fa-solid fa-magnifying-glass"></i>
+			<i class="header__microphone-btn fa-solid fa-microphone"></i>
+		</div>
+		<div class="header__right">
+			<i class="header__settings-icon fa solid fa-ellipsis-vertical"></i>
+			<button class="button">
+				<i class="button__icon fa-regular fa-circle-user"></i>
+				<span class="button__text">Zaloguj się</span>
+			</button>
+		</div>
+	</header>
+
+	<!-- navbar mobile -->
+	<nav class="navbar">
+		<ul class="navbar__list">
+			<li class="navbar__item">
+				<i class="navbar__icon fa-solid fa-house"></i>Główna
+			</li>
+			<li class="navbar__item">
+				<i class="navbar__icon fa-brands fa-periscope"></i>Shorts
+			</li>
+			<li class="navbar__item">
+				<i class="navbar__icon fa-regular fa-circle-play"></i>Subskrypcje
+			</li>
+			<li class="navbar__item">
+				<i class="navbar__icon fa-solid fa-photo-film"></i>Biblioteka
+			</li>
+			<li class="navbar__item">
+				<i class="navbar__icon fa-solid fa-clock-rotate-left"></i>Historia
+			</li>
+		</ul>
+	</nav>
+
+	<!-- navbar desktop -->
+	<nav class="navbar-desktop">
+		<ul class="navbar-desktop__list">
+			<li class="navbar-desktop__item navbar-desktop__item--active">
+				<i class="navbar-desktop__icon fa-solid fa-house"></i>Główna
+			</li>
+			<li class="navbar-desktop__item">
+				<i class="navbar-desktop__icon fa-brands fa-periscope"></i>Shorts
+			</li>
+			<li class="navbar-desktop__item">
+				<i class="navbar-desktop__icon fa-regular fa-circle-play"></i>Subskrypcje
+			</li>
+		</ul>
+		<div class="navbar-desktop__line"></div>
+		<ul class="navbar-desktop__list">
+			<li class="navbar-desktop__item">
+				<i class="navbar-desktop__icon fa-solid fa-photo-film"></i>Biblioteka
+			</li>
+			<li class="navbar-desktop__item">
+				<i class="navbar-desktop__icon fa-solid fa-clock-rotate-left"></i>Historia
+			</li>
+		</ul>
+		<div class="navbar-desktop__line"></div>
+		<div class="navbar-desktop__login">
+			<p class="navbar-desktop__text">
+				Zaloguj się, by polubić film, zostawić komentarz lub zasubskrybować
+				kanał.
+			</p>
+			<button class="button">
+				<i class="button__icon fa-regular fa-circle-user"></i>
+				<span class="button__text">Zaloguj się</span>
+			</button>
+		</div>
+		<div class="navbar-desktop__line"></div>
+		<h3 class="navbar-desktop__subheading">Odkrywaj</h3>
+		<ul class="navbar-desktop__list">
+			<li class="navbar-desktop__item">
+				<i class="navbar-desktop__icon fa-solid fa-house"></i>Na czasie
+			</li>
+			<li class="navbar-desktop__item">
+				<i class="navbar-desktop__icon fa-solid fa-music"></i>Muzyka
+			</li>
+			<li class="navbar-desktop__item">
+				<i class="navbar-desktop__icon fa-solid fa-film"></i>Filmy
+			</li>
+			<li class="navbar-desktop__item">
+				<i class="navbar-desktop__icon fa-solid fa-wifi"></i>Na żywo
+			</li>
+			<li class="navbar-desktop__item">
+				<i class="navbar-desktop__icon fa-solid fa-gamepad"></i>Gry
+			</li>
+			<li class="navbar-desktop__item">
+				<i class="navbar-desktop__icon fa-regular fa-envelope"></i>Wiadomości
+			</li>
+			<li class="navbar-desktop__item">
+				<i class="navbar-desktop__icon fa-solid fa-basketball"></i>Sport
+			</li>
+		</ul>
+		<div class="navbar-desktop__line"></div>
+		<ul class="navbar-desktop__list">
+			<li class="navbar-desktop__item">
+				<i class="navbar-desktop__icon fa-solid fa-circle-plus"></i>Przeglądaj
+				kanały
+			</li>
+		</ul>
+		<div class="navbar-desktop__line"></div>
+		<h3 class="navbar-desktop__subheading">Więcej z YouTube</h3>
+		<ul class="navbar-desktop__list">
+			<li class="navbar-desktop__item">
+				<i class="navbar-desktop__icon navbar-desktop__icon--secondary fa-brands fa-youtube"></i>YouTube Premium
+			</li>
+			<li class="navbar-desktop__item">
+				<i class="navbar-desktop__icon navbar-desktop__icon--secondary fa-brands fa-youtube"></i>YouTube Music
+			</li>
+			<li class="navbar-desktop__item">
+				<i class="navbar-desktop__icon navbar-desktop__icon--secondary fa-brands fa-youtube"></i>YouTube Kids
+			</li>
+			<li class="navbar-desktop__item">
+				<i class="navbar-desktop__icon navbar-desktop__icon--secondary fa-brands fa-youtube"></i>YouTube TV
+			</li>
+		</ul>
+		<div class="navbar-desktop__line"></div>
+		<ul class="navbar-desktop__list">
+			<li class="navbar-desktop__item">
+				<i class="navbar-desktop__icon fa-solid fa-gear"></i>Ustawienia
+			</li>
+			<li class="navbar-desktop__item">
+				<i class="navbar-desktop__icon fa-regular fa-flag"></i>Historia
+				raportów
+			</li>
+			<li class="navbar-desktop__item">
+				<i class="navbar-desktop__icon fa-solid fa-circle-question"></i>Pomoc
+			</li>
+			<li class="navbar-desktop__item">
+				<i class="navbar-desktop__icon fa-regular fa-message"></i>Prześlij
+				opinię
+			</li>
+		</ul>
+		<div class="navbar-desktop__line"></div>
+		<div class="navbar-desktop__links">
+			<a class="navbar-desktop__link" href="#">Informacje</a>
+			<a class="navbar-desktop__link" href="#">Centrum prasowe</a>
+			<a class="navbar-desktop__link" href="#">Prawa autorskie</a>
+			<a class="navbar-desktop__link" href="#">Skontaktuj się z nami</a>
+			<a class="navbar-desktop__link" href="#">Twórcy</a>
+			<a class="navbar-desktop__link" href="#">Reklamy</a>
+			<a class="navbar-desktop__link" href="#">Deweloperzy</a>
+		</div>
+		<div class="navbar-desktop__links">
+			<a class="navbar-desktop__link" href="#">Warunki</a>
+			<a class="navbar-desktop__link" href="#">Prywatność</a>
+			<a class="navbar-desktop__link" href="#">Zasady i bezpieczeństwo</a>
+			<a class="navbar-desktop__link" href="#">Jak działa YouTube</a>
+			<a class="navbar-desktop__link" href="#">Przetestuj nowe funkcje</a>
+		</div>
+		<div class="navbar-desktop__company">&copy; 2023 Google LLC</div>
+	</nav>
+
+	<!-- categories -->
+	<section class="categories">
+		<span class="categories__item categories__item--active">Wszystko</span>
+		<span class="categories__item">Na żywo</span>
+		<span class="categories__item">Muzyka</span>
+		<span class="categories__item">Turystyka</span>
+		<span class="categories__item">Gry</span>
+		<span class="categories__item">Skecze</span>
+		<span class="categories__item">Wiadomości</span>
+		<span class="categories__item">Piłka nożna</span>
+		<span class="categories__item">Przyroda</span>
+		<span class="categories__item">Przygodowe gry akcji</span>
+		<span class="categories__item">Gotowanie</span>
+		<span class="categories__item">Ostatnio przesłane</span>
+	</section>
+
+	<!-- content -->
+	<main class="content">
+		<article class="video">
+			<img class="video__thumbnail" src="images/4-zapoznanie-z-visual-studio.jpg" alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">
+						Instalacja i Zapoznanie z VISUAL STUDIO
+					</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail"
+				src="images/40-skrotow-klawiszowych-w-visual-studio-produktywny-programista.jpg" alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">
+						40 SKRÓTÓW KLAWISZOWYCH w Visual Studio
+					</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail" src="images/2023-asp-web1.png" alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">100 POMYSŁÓW NA APLIKACJĘ</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail" src="images/2023-asp-web2.png" alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">Szkolenie ASP.NET Core</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail" src="images/bledy-poczatkujacych-w-aspdotnetcore.png" alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">Błędy początkujących w ASP.NET Core</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail" src="images/najlepsze-praktyki-mvc.png" alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">Najlepsze praktyki ASP.NET MVC</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail"
+				src="images/jak-wyglada-rozmowa-kwalifikacyjna-na-stanowisko-mlodszego-programisty-dotnet.jpg"
+				alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">
+						Jak Wygląda ROZMOWA KWALIFIKACYJNA Programisty?
+					</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail" src="images/jak-zaczac-programowac-pierwsza-aplikacja-w-csharpie.jpg"
+				alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">Pierwsza APLIKACJA W C#</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail"
+				src="images/jak-zostac-programista-dotnet-szkolenie-online-zostan-programista-dotnet.png"
+				alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">Jak Zostać Programistą C#/.NET?</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail" src="images/najlepsze-praktyki-rest-api.png" alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">Najlepsze praktyki REST API</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail" src="images/nauka-programowania-jak-nauczyc-sie-programowania-od-podstaw.jpg"
+				alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">
+						Jak NAUCZYĆ Się PROGRAMOWANIA Od PODSTAW?
+					</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail"
+				src="images/pierwsza-aplikacja-konsolowa-w-csharpie-programujemy-kalkulator.jpg" alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">
+						PIERWSZA APLIKACJA KONSOLOWA w C# – Kalkulator
+					</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail" src="images/4-zapoznanie-z-visual-studio.jpg" alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">
+						Instalacja i Zapoznanie z VISUAL STUDIO
+					</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail"
+				src="images/40-skrotow-klawiszowych-w-visual-studio-produktywny-programista.jpg" alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">
+						40 SKRÓTÓW KLAWISZOWYCH w Visual Studio
+					</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail" src="images/2023-asp-web1.png" alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">100 POMYSŁÓW NA APLIKACJĘ</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail" src="images/2023-asp-web2.png" alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">Szkolenie ASP.NET Core</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail" src="images/bledy-poczatkujacych-w-aspdotnetcore.png" alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">Błędy początkujących w ASP.NET Core</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail" src="images/najlepsze-praktyki-mvc.png" alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">Najlepsze praktyki ASP.NET MVC</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail"
+				src="images/jak-wyglada-rozmowa-kwalifikacyjna-na-stanowisko-mlodszego-programisty-dotnet.jpg"
+				alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">
+						Jak Wygląda ROZMOWA KWALIFIKACYJNA Programisty?
+					</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail" src="images/jak-zaczac-programowac-pierwsza-aplikacja-w-csharpie.jpg"
+				alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">Pierwsza APLIKACJA W C#</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail"
+				src="images/jak-zostac-programista-dotnet-szkolenie-online-zostan-programista-dotnet.png"
+				alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">Jak Zostać Programistą C#/.NET?</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail" src="images/najlepsze-praktyki-rest-api.png" alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">Najlepsze praktyki REST API</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail" src="images/nauka-programowania-jak-nauczyc-sie-programowania-od-podstaw.jpg"
+				alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">
+						Jak NAUCZYĆ Się PROGRAMOWANIA Od PODSTAW?
+					</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail"
+				src="images/pierwsza-aplikacja-konsolowa-w-csharpie-programujemy-kalkulator.jpg" alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">
+						PIERWSZA APLIKACJA KONSOLOWA w C# – Kalkulator
+					</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail" src="images/4-zapoznanie-z-visual-studio.jpg" alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">
+						Instalacja i Zapoznanie z VISUAL STUDIO
+					</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail"
+				src="images/40-skrotow-klawiszowych-w-visual-studio-produktywny-programista.jpg" alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">
+						40 SKRÓTÓW KLAWISZOWYCH w Visual Studio
+					</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail" src="images/2023-asp-web1.png" alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">100 POMYSŁÓW NA APLIKACJĘ</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail" src="images/2023-asp-web2.png" alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">Szkolenie ASP.NET Core</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail" src="images/bledy-poczatkujacych-w-aspdotnetcore.png" alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">Błędy początkujących w ASP.NET Core</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail" src="images/najlepsze-praktyki-mvc.png" alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">Najlepsze praktyki ASP.NET MVC</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail"
+				src="images/jak-wyglada-rozmowa-kwalifikacyjna-na-stanowisko-mlodszego-programisty-dotnet.jpg"
+				alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">
+						Jak Wygląda ROZMOWA KWALIFIKACYJNA Programisty?
+					</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail" src="images/jak-zaczac-programowac-pierwsza-aplikacja-w-csharpie.jpg"
+				alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">Pierwsza APLIKACJA W C#</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail"
+				src="images/jak-zostac-programista-dotnet-szkolenie-online-zostan-programista-dotnet.png"
+				alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">Jak Zostać Programistą C#/.NET?</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail" src="images/najlepsze-praktyki-rest-api.png" alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">Najlepsze praktyki REST API</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail" src="images/nauka-programowania-jak-nauczyc-sie-programowania-od-podstaw.jpg"
+				alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">
+						Jak NAUCZYĆ Się PROGRAMOWANIA Od PODSTAW?
+					</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+		<article class="video">
+			<img class="video__thumbnail"
+				src="images/pierwsza-aplikacja-konsolowa-w-csharpie-programujemy-kalkulator.jpg" alt="Tytuł filmu 1" />
+			<div class="video__info">
+				<img class="video__channel-img" src="images/kszpin.png" alt="Autor 1" />
+				<div class="video__desc">
+					<h2 class="video__title">
+						PIERWSZA APLIKACJA KONSOLOWA w C# – Kalkulator
+					</h2>
+					<div class="video__channel-name">ModestProgrammer</div>
+					<span class="video__views">100 tys. wyświetleń</span><span class="video__date">8 godzin temu</span>
+				</div>
+			</div>
+		</article>
+	</main>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
