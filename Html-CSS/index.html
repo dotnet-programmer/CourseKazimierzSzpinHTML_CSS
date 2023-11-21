@@ -1,0 +1,2396 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Szkoła HTML i CSS - Naucz się tworzyć strony internetowe</title>
+	<link rel="icon" href="images/favicon.png" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+	<!-- header -->
+	<header>
+		<nav class="menu collapsible">
+			<i class="menu__icon fa-solid fa-bars"></i>
+			<ul class="menu__list collapsible__content">
+				<li>
+					<a class="menu__link" href="#author">Instruktor</a>
+				</li>
+				<li>
+					<a class="menu__link" href="#course-content">Zawartość</a>
+				</li>
+				<li>
+					<a class="menu__link" href="#opinions">Opinie</a>
+				</li>
+				<li>
+					<a class="menu__link" href="#price">Cena</a>
+				</li>
+				<li>
+					<a class="menu__link" href="#agenda">Agenda</a>
+				</li>
+				<li>
+					<a class="menu__link" href="#security">Gwarancja</a>
+				</li>
+				<li>
+					<a class="menu__link" href="#faq">FAQ</a>
+				</li>
+				<li>
+					<a class="menu__link" href="#join">Dołącz</a>
+				</li>
+				<li>
+					<a class="menu__link" href="#">Zaloguj się</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="heading block block--dark block--skewed-left">
+			<div class="container grid grid--1x2">
+				<div class="heading__left">
+					<h1>Zostań Mistrzem Tworzenia Stron Internetowych</h1>
+					<span class="heading__secondary-text">Tworzenie stron internetowych nie musi być trudne - naucz się
+						HTML i CSS z naszym szkoleniem!</span>
+				</div>
+				<div class="heading__right">
+					<!-- 
+					<video class="heading__video" width="100%" height="100%" controls controlsList="nodownload">
+						<source src="videos/html-css-sprzedaz.mp4" type="video/mp4" />
+					</video> 
+					-->
+					<div style="padding: 56.25% 0 0 0; position: relative">
+						<iframe
+							src="https://player.vimeo.com/video/789725343?h=6eb94f6b2e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+							frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+							style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+							title="Szkoła HTML CSS">
+						</iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- start-course -->
+	<section class="block start-course">
+		<div class="container start-course__container">
+			<a class="start-course__btn" href="#">Dołączam do programu</a>
+			<span class="start-course__label">Zapisy zamykamy w piątek (17.02.2023) o 22:00</span>
+			<div class="countdown-timer">
+				<span class="countdown-timer__element">16<small class="countdown-timer__label">Dni</small></span>
+				<span class="countdown-timer__element">13<small class="countdown-timer__label">Godzin</small></span>
+				<span class="countdown-timer__element">43<small class="countdown-timer__label">Minut</small></span>
+				<span class="countdown-timer__element">12<small class="countdown-timer__label">Sekund</small></span>
+			</div>
+		</div>
+	</section>
+
+	<!-- author -->
+	<section id="author" class="block block--light author">
+		<div class="container">
+			<h2>Kim jest Twój Instruktor</h2>
+			<div class="grid grid--1x3">
+				<img class="author__img" src="images/kszpin.png" alt="Kazimierz Szpin" />
+				<div class="author__info">
+					<p>
+						Twój instruktor to <strong>Kazimierz Szpin</strong>. Pasjonat
+						programowania, od kilkunastu lat związany z programowaniem. Przez
+						całą swoją dotychczasową karierę rozwija aplikacje głównie w C# na
+						platformie .NET.
+					</p>
+					<p>
+						Współpracował między innymi z takimi firmami jak:
+						<strong>Sensonics</strong>, <strong>Infobox</strong>,
+						<strong>BIELbit</strong>, <strong>Rekord SI</strong>.
+					</p>
+					<span>Twórca i autor wielu inicjatyw, między innymi:</span>
+					<ul class="author__list">
+						<li class="author__item">
+							<strong>Blog ModestProgrammer.pl</strong> skierowanego głównie
+							dla Programistów C#/.NET.
+						</li>
+						<li class="author__item">
+							<strong>Kanał ModestProgrammer</strong> na YouTube.
+						</li>
+						<li class="author__item">
+							<strong>Szkolenie "Zostań Programistą .NET".</strong>
+						</li>
+						<li class="author__item">
+							<strong>Szkolenie "Szkoła HTML CSS"</strong>.
+						</li>
+						<li class="author__item">
+							<strong>Szkolenie "Szkoła ASP.NET Core"</strong> dla
+							Programistów C#/.NET.
+						</li>
+						<li class="author__item">
+							<strong>Szkolenie "Szkoła Testów Jednostkowych"</strong> dla
+							Programistów C#/.NET.
+						</li>
+						<li class="author__item">
+							<strong>Szkolenie "Szkoła Entity Framework Core"</strong> dla
+							Programistów C#/.NET.
+						</li>
+						<li class="author__item">
+							<strong>Aplikacja StworzSklepOnline.pl</strong>
+						</li>
+						<li class="author__item">
+							<strong>Aplikacja BlogW5minut.pl</strong>
+						</li>
+					</ul>
+					<p>
+						Przez większą część swojej kariery pracował jednocześnie
+						<strong>na etacie</strong> oraz jako <strong>freelancer</strong> w
+						kilku firmach tworzących oprogramowanie.
+					</p>
+
+					<p>
+						Pisał różne aplikacje w swojej karierze. Zaczynał od aplikacji
+						desktopowych pisanych w windows forms, następnie w WPF. Poprzez
+						aplikacje mobilne pisane w Xamarinie, a kończąc na aplikacjach
+						webowych w ASP.NET MVC, ASP.NET Core, ASP.NET Web API i Blazor.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- course-content -->
+	<section id="course-content" class="block">
+		<div class="container">
+			<h2>Oto co dostaniesz w szkole html css</h2>
+			<div class="grid grid--1x2">
+				<div class="card card--accent">
+					<header class="card__header">
+						<i class="card__icon fa-solid fa-circle-check"></i>
+						Poznasz Cały Proces
+					</header>
+					<div class="card__body">
+						Poznasz cały proces od zera do osoby, która jest wstanie sama
+						tworzyć kompletne aplikacje po stronie frontendu w HTML i CSS.
+					</div>
+				</div>
+				<div class="card card--accent">
+					<header class="card__header">
+						<i class="card__icon fa-solid fa-circle-check"></i>
+						Otrzymasz 21 Modułów Szkolenia Online
+					</header>
+					<div class="card__body">
+						To jest kompletne szkolenie. Otrzymasz od 7 do 28 (zgodnie z
+						agendą) nagrań video w każdym module, pokazujących cały proces.
+						Przeprowadzę Cię od podstaw w HTML i CSS, aż po tworzenie
+						zaawansowanych aplikacji internetowych.
+					</div>
+				</div>
+				<div class="card card--accent">
+					<header class="card__header">
+						<i class="card__icon fa-solid fa-circle-check"></i>
+						Przejdziesz Przez Proces Pod Okiem Mentora
+					</header>
+					<div class="card__body">
+						Przez cały okres trwania szkolenia, będziesz pracował pod okiem
+						prowadzącego, który pomoże w razie problemów. Będziecie w stałym
+						kontakcie.
+					</div>
+				</div>
+				<div class="card card--accent">
+					<header class="card__header">
+						<i class="card__icon fa-solid fa-circle-check"></i>Stawiamy Na
+						Praktykę
+					</header>
+					<div class="card__body">
+						Przez całe szkolenie będzie bazować na praktyce i będziemy tworzyć
+						wiele aplikacji internetowych.
+					</div>
+				</div>
+				<div class="card card--accent">
+					<header class="card__header">
+						<i class="card__icon fa-solid fa-circle-check"></i>Zaawansowane
+						Aplikacje
+					</header>
+					<div class="card__body">
+						Stworzymy między innymi strony internetowe takich aplikacje jak:
+						Facebook, Youtube, Google a także sklep internetowy, blog, CV,
+						fakturę oraz stronę, którą obecnie przeglądasz i inne.
+					</div>
+				</div>
+				<div class="card card--accent">
+					<header class="card__header">
+						<i class="card__icon fa-solid fa-circle-check"></i>
+						Poznasz Najczęstsze Błędy Początkujących i Najlepsze Praktyki
+					</header>
+					<div class="card__body">
+						Przez całe szkolenie będę Ci zwracał uwagę, by nie popełniać
+						podstawowych błędów początkujących i skupić się tylko na
+						najlepszych praktykach tworzenia oprogramowania.
+					</div>
+				</div>
+				<div class="card card--accent">
+					<header class="card__header">
+						<i class="card__icon fa-solid fa-circle-check"></i>Dostęp Do
+						Prywatnej Grupy
+					</header>
+					<div class="card__body">
+						Otrzymasz dostęp do prywatnej grupy, w której otrzymasz pomoc we
+						wszystkich zagadnieniach związanych z tworzeniem aplikacji w HTML
+						i CSS. Będą w niej również osoby takie jak Ty, które uczą się
+						programować i chcą tworzyć aplikacje. Będziemy się tam również
+						wymieniali swoimi doświadczeniami z tworzenia aplikacji.
+					</div>
+				</div>
+				<div class="card card--accent">
+					<header class="card__header">
+						<i class="card__icon fa-solid fa-circle-check"></i>
+						Certyfikat Ukończenia Szkolenia
+					</header>
+					<div class="card__body">
+						Jeżeli przerobisz całe szkolenie, to na zakończenie otrzymasz
+						certyfikat ukończenia szkolenia. Informacje o takim certyfikacie
+						możesz umieścisz w swoim CV, dzięki czemu zwiększysz swoje szanse
+						na znalezienie pracy.
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- opinion -->
+	<section id="opinions" class="block block--light opinion-block">
+		<div class="container">
+			<h2>Moje opinie</h2>
+			<div class="card">
+				<div class="card__body">
+					<div class="opinion">
+						<div class="opinion__author">
+							<img class="opinion__img" src="images/mkiela.jpg" alt="Mateusz Kiela" />
+							<div class="opinion__name">Mateusz Kiela</div>
+						</div>
+						<div class="opinion__text">
+							Hej, z tej strony Mateusz, szkolenie u Kazimierza z
+							ModestProgrammer.pl pt. "Szkolenie Zostań Programistą .NET" jest
+							naprawdę dobre. Porusza wiele tematów związanych z
+							programowaniem w .NET a w dodatku aplikacje, które się tam piszę
+							są naprawdę rozbudowane. Szkolenie, jeśli się je przerobi oraz
+							co najważniejsze przyswoi wiedzę w sposób znaczny, czyli nie
+							będą to tylko tematy znajome ale będzie się w nich czuć nieźle,
+							to można spokojnie liczyć na zatrudnienie jako programist .NET.
+							Ważne jest aby robić prace domowe oraz starać się je rozwiązywać
+							samodzielnie w pierwszej kolejności, tak wygląda praca
+							programisty na codzień, wiem co piszę, bo po kursie u Kazika
+							zostałem programistą w PKO BP.<br />
+							Pozdrawiam Mateusz Kiela i życzę powodzenia w kodowaniu i
+							przyswajaniu wiedzy z kursu!
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card__body">
+					<div class="opinion">
+						<div class="opinion__author">
+							<img class="opinion__img" src="images/mrozwalka.jpg" alt="Marek Rozwałka" />
+							<div class="opinion__name">Marek Rozwałka</div>
+						</div>
+						<div class="opinion__text">
+							Odkąd pamiętam zawsze chciałem zostać programistą, nie wiem
+							dlaczego ale padło na ASP.NET.<br />
+
+							Za moich czasów szkolnych to było nierealne z uwagi na małą
+							popularność tego języka oraz mizerne treści w internecie.<br />
+
+							Wiadomo czasy się zmieniają rynek pracy również. Dotychczas
+							praktykowałem grafikę komputerową dopóki nie natrafiłem(na
+							Facebook'u) na szkolenie Kazimierza Szpin'a właśnie o tematyce
+							programistycznej w którym jest właśnie omawiana technologia
+							Microsoftu ASP opartego o język C# wykorzystująca platformę
+							.NET.<br />
+
+							Podczas szkolenia poznasz od podszewki wszystkie te dziwne
+							skróty, nauczysz się podstaw programowania kompleksowo.<br />
+
+							Dzięki temu poznasz solidne podstawy programowania nawet jeśli
+							wcześniej nie programowałeś. W kursie poznasz i obierzesz swoją
+							drogę programistyczną w zależności od tego jakie aplikacje
+							chcesz tworzyć czy to na desktopy, do sieci web lub na
+							urządzenia mobilne. Po solidnych podstawach, które są zawarte w
+							szkoleniu obierasz drogę dalszego rozwoju. Kurs składa się z
+							kilkunastu modułów, wiadomo nie ma lekko. Jest to solidna dawka
+							nauki a po każdym rozdziale jest praca domowa. Pamiętaj praktyka
+							czyni mistrza. Swoje prace domowe możesz umieszczać do
+							sprawdzenia na zamkniętej grupie w FB. Autor jest osobą dosyć
+							kontaktową.<br />
+
+							Jeśli chcesz to możesz też dostawać od niego na swojego maila
+							ciekawe informacje dotyczące programowania. Być na czasie dobra
+							rzecz. Końcówka szkolenia to będą informacje dotyczące Twojej
+							pierwszej pracy, trudne pytania rekrutacyjne oraz pisanie CV.<br />
+
+							Ze swojej strony mogę śmiało polecić videokursy Kazimierza są
+							super jak nie wierzysz to się przekonasz sam. Naprawdę warto
+							takiej solidnej dawki nie uraczysz w żadnej szkole. To szkolenie
+							Cię uświadomi co z czym się je i nie będą Ci straszne żadne
+							zawiłe pojęcia.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card__body">
+					<div class="opinion">
+						<div class="opinion__author">
+							<img class="opinion__img" src="images/msobas.png" alt="Mieczysław Sobaś" />
+							<div class="opinion__name">Mieczysław Sobaś</div>
+						</div>
+						<div class="opinion__text">
+							"Nie sztuką jest nauczyć się programować, sztuką jest pisać
+							dobry i zwięzły kod zgodnie z przyjętymi zasadami". Z
+							programowaniem aplikacji desktopowych mam do czynienia od bardzo
+							dawna. Programowania uczyłem się na własną rękę czerpiąc wiedzę
+							z różnych źródeł… i z różnym efektem. Każdy wykładowca prowadził
+							kurs na własny sposób. W konsekwencji mój kod nie był dobry i w
+							każdym programie wyglądał inaczej - jak "Spaghetti code", a przy
+							tym korzystałem z technologii sprzed 10 lat.<br />
+
+							Kurs "Zostań Programistą .NET" całkowicie zmienił moje podejście
+							do programowania. Autor kursu w przystępny sposób dzieli się
+							swoją wiedzą, rzetelnie i fachowo omawia zagadnienia związane z
+							technologiami .NET i małymi krokami wprowadza w świat
+							programowania obiektowego. Ogromna ilość materiału poparta
+							przykładami, ciekawe zadania przygotowane do każdej lekcji oraz
+							możliwość kontaktu z autorem w razie sytuacji bez wyjścia,
+							sprawia, że ten kurs nie ma sobie równych. Mimo innego
+							posiadanego kursu oraz książek do WPF, dopiero ten kurs zachęcił
+							mnie do pisania takich aplikacji. Dzięki Entity Framework, w
+							porównaniu do ADO.NET, poznałem jak łatwo i wygodnie można
+							wykonywać operacje na bazie danych za pomocą języka LINQ.<br />
+
+							Szczerze polecam ten kurs każdemu!
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card__body">
+					<div class="opinion">
+						<div class="opinion__author">
+							<img class="opinion__img" src="images/azapart.jpg" alt="Andrzej Zapart" />
+							<div class="opinion__name">Andrzej Zapart</div>
+						</div>
+						<div class="opinion__text">
+							Bardzo Dobry Kurs, zarówno dla początkujących jak i dla chcących
+							sobie przypomnieć oraz odświeżyć wiedzę i dobrze zapoznać się z
+							programowaniem w C# i .NET. Kurs moim zdaniem bardzo dobrze
+							przygotowany pod kątem mniej teorii a więcej praktyki, zwłaszcza
+							że kurs online jest stworzony w sposób pisania kodu i
+							tłumaczenia jego działania. Super kwestia zadań domowych, które
+							po wykonaniu przez siebie samego 😄, można sprawdzić w kolejnej
+							lekcji pomagającej w rozwiązaniu jego, ale nie tylko bo Ogromną
+							zaletą jest sprawdzenie twojego zadania przez samego Autora oraz
+							pomoc i wskazanie przydatnych wskazówek co do pracy i jakości
+							kodu. Ćwiczenia praktyczne to jeden z najlepszych sposobów
+							utrwalania wiedzy. Generalnie kurs jest bardzo dobrze
+							przemyślany pod kątem bloków tematycznych, struktury oraz
+							harmonogramu i niewątpliwie treści. Informacje przedstawione są
+							w sposób przejrzysty i konkretny oraz stopniowo bez pośpiechu.
+							Bardzo dobry i szybki kontakt z Prowadzącym oraz możliwość
+							przerobienia w dowolnym czasie Kursu Online wraz z opieką
+							Mentora sprawia że jest to super alternatywa dla kursów
+							stacjonarnych oraz bootcampów. Dla mnie sensowny sposób
+							nauczania i Szczerze Polecam ten kurs nawet dla Początkujących.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card__body">
+					<div class="opinion">
+						<div class="opinion__author">
+							<img class="opinion__img" src="images/spomana.png" alt="Sławomir Pomana" />
+							<div class="opinion__name">Sławomir Pomana</div>
+						</div>
+						<div class="opinion__text">
+							Hej, zdecydowałem się na kurs Zostań Programistą .NET i jestem
+							zadowolony. Struktura szkolenia jest dobrze zorganizowana tzn w
+							każdym rozdziale najpierw jest omawiana dana tematyka a na
+							koniec rozdziału są zadania praktyczne które pozwalają na
+							przećwiczenie tego co zostało omówione. Kolejnym punktem który
+							mnie skłonił do zakupu tego kursu jest opieka mentora. W
+							praktyce ten punkt również mnie pozytywnie zadowolił ponieważ
+							podejście mentora widać że jest indywidualne i z każdym
+							problemem można pisać po czym dostaję się wsparcie. Nie ma
+							czegoś takiego jak zlewanie, odpowiedzi dostaje jeszcze tego
+							samego dnia lub na kolejny jak jest późno 🙂 W razie pytań
+							zapraszam na mój profil linkedIn
+							(https://www.linkedin.com/in/s%C5%82awomir-pomana-8a251a96).
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="grid grid--1x2">
+				<div class="card">
+					<div class="card__body">
+						<div class="opinion">
+							<div class="opinion__author">
+								<img class="opinion__img" src="images/bplata.jpg" alt="Bartłomiej Plata" />
+								<div class="opinion__name">Bartłomiej Plata</div>
+							</div>
+							<div class="opinion__text">
+								Dla mnie jako osoby praktycznej kurs "Zostań Programistą .NET"
+								to skompresowana wiedza, która przy regularnym praktykowaniu
+								sama wchodzi do głowy. Zagadnienia związane z programowaniem
+								obiektowym czy też bardziej wyszczególnionymi zagadnieniami
+								stają się jasne i klarowne. Ogrom wiedzy zawarty w
+								materiałach, a do tego ciągły dostęp do kursu daje możliwość
+								utrzymania wysokiego poziomu dla programisty. Bardzo gorąco
+								polecam dla osób, które zamiast wyszukiwać wiadomości w
+								internecie i tracić czas zrozumienie zależności między nimi
+								wolą skupić się na konkretach.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__body">
+						<div class="opinion">
+							<div class="opinion__author">
+								<img class="opinion__img" src="images/skurek.png" alt="Sebastian Kurek" />
+								<div class="opinion__name">Sebastian Kurek</div>
+							</div>
+							<div class="opinion__text">
+								Jako tester automatyzujący w C# chciałem poznać szerzej wiedzę
+								na temat możliwości platformy .NET. Dzięki kursowi Zostań
+								Programistą .NET nauczyłem bardzo dużo nowych rzeczy o
+								programowaniu i dobrym podejściu do pisania kodu. Kurs zawiera
+								materiały z pełnego zakresu .NETa. Wszystko jest dobrze
+								wyjaśnione i poparte praktycznymi przykładami. Największą
+								zaletą kursu dla mnie jest to że projekty które są w nim
+								realizowane są realnymi aplikacjami a nie zmyślonymi
+								przykładami. Autor kursu bardzo szybko pomaga w rozwiązaniu
+								pojawiających się problemów. Bardzo polecam kurs dla każdego
+								kto myśli o programowaniu.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="grid grid--1x2">
+				<div class="card">
+					<div class="card__body">
+						<div class="opinion">
+							<div class="opinion__author">
+								<img class="opinion__img" src="images/pkubiak.jpg" alt="Pawel Kubiak" />
+								<div class="opinion__name">Pawel Kubiak</div>
+							</div>
+							<div class="opinion__text">
+								Witam. Chcialbym wszystkim polecic kurs 'Zostan programista
+								NET'. Nauka wymaga czasu i zaangazowania ale znajdziecie tu
+								wszystkie potrzebne materiały i informacje. Wiedza
+								przedstawiona jest w przystepny sposob i reszta zalezy od Was
+								🙂 Wielkim plusem kursu jest opieka Kazimierza ktory jest
+								bardzo pomocny i w razie gdy czegos nie rozumiecie szybko
+								odpowiada na Wasze maile. Polecam!
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__body">
+						<div class="opinion">
+							<div class="opinion__author">
+								<img class="opinion__img" src="images/mbeska.jpg" alt="Michał Beśka" />
+								<div class="opinion__name">Michał Beśka</div>
+							</div>
+							<div class="opinion__text">
+								Dzięki szkoleniu udało mi się zdobyć staż, a później pierwszą
+								pracę. Szkolenie pomogło mi nauczyć się tworzenia aplikacji
+								e-commerce. Jeżeli chce się pracować jako programista,
+								zdecydowanie polecam zacząć od szkolenia "Zostań programistą
+								.Net".
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="grid grid--1x2">
+				<div class="card">
+					<div class="card__body">
+						<div class="opinion">
+							<div class="opinion__author">
+								<img class="opinion__img" src="images/mszafranski.jpg" alt="Maciej Szafrański" />
+								<div class="opinion__name">Maciej Szafrański</div>
+							</div>
+							<div class="opinion__text">
+								Bardzo polecam szkolenie Akademia .NET. Nie jest ono tak tanie
+								jak na platformach e-learningowych, ale tam płacimy za
+								absolutne podstawy. Z drugiej strony nie jest to bootcamp za
+								15 tys. zł. Moim zdaniem stosunek jakości do ceny jest
+								zdecydowanie nieporównywalny z wymienionymi, oczywiście na
+								plus. Materiału jest naprawdę dużo. Wiedza w nim zawarta
+								zdecydowanie wykracza poza absolutne podstawy. Dużo zadań
+								praktycznych. Prowadzący jest bardzo pomocny i chętnie pomaga,
+								jeśli ktoś ma jakiś problem w rozwiązaniu zadania. Prace
+								domowe sprawdzane są bardzo szybko (około 1 dzień) i
+								dokładnie. Polecam, tym bardziej, że sam zdecydowałem się na
+								zakup kolejnych szkoleń.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__body">
+						<div class="opinion">
+							<div class="opinion__author">
+								<img class="opinion__img" src="images/mradwanski.jpg" alt="Mateusz Radwański" />
+								<div class="opinion__name">Mateusz Radwański</div>
+							</div>
+							<div class="opinion__text">
+								Szkolenie "Zostań Programistą .NET" to kompleksowy kurs
+								C#/.NET, który daje solidne podstawy, aby w przyszłości zostać
+								programistą C#/.NET.<br />
+								Prowadzący to programista z wieloletnim doświadczeniem, który
+								umie przekazać wiedzę uczestnikom, a dodatkowo można zawsze
+								liczyć na jego pomoc. <br />
+								W przypadku pytań lub problemów odpowiada naprawdę szybko.<br />
+								Jakość nagrań SUPER, tempo OK, słucha się przyjemnie. Polecam,
+								jako jeden z obecnie najlepszych kursów C#/.NET.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<h2>Pozostałe opinie</h2>
+			<div class="carousel">
+				<div class="carousel__all">
+					<div class="carousel__content">
+						<p class="carousel__text">
+							"Zostań Programistą .NET" to dosyć wyjątkowy kurs. Przyznam, że
+							początkowo zastanawiałem się nad tym, czy warto rzeczywiście coś
+							takiego kupować - myślałem sobie, że przecież jest wiele
+							darmowych tutoriali i poradników do znalezienia w internecie, z
+							których równie dobrze mógłbym skorzystać. Ostatecznie jednak
+							zdecydowałem się mimo wszystko na zakup i mogę dzisiaj
+							powiedzieć, że absolutnie tego nie żałuję. Ilość przekazanej
+							praktycznej wiedzy była naprawdę niesamowita i nie sądzę, żeby
+							dało się ją w jakikolwiek łatwy i szybki sposób uzyskać
+							samodzielnie. Autor kursu jest programistą, który przysłowiowo
+							"zjadł zęby" na technologiach .NET i porusza się wśród nich z
+							ogromną sprawnością. Dzięki jego wskazówkom można samemu
+							odnaleźć się w tym świecie i wybrać swoją własną ścieżkę
+							kariery. Dodam jeszcze, że choć ja osobiście umiałem już trochę
+							programować w C# (co nie jest obowiązkowe żeby zacząć), to
+							dopiero ten kurs uświadomił mi, ilu praktycznych rzeczy
+							związanych z pisaniem aplikacji tak naprawdę jeszcze nie
+							wiedziałem. Krótko mówiąc: polecam każdemu, kto jest
+							zainteresowany pracą w tym obszarze. 🙂
+						</p>
+						<div class="carousel__author">Jakub Chęciński</div>
+						<div class="carousel__course">
+							Uczestnik szkolenia Zostań Programistą .NET
+						</div>
+					</div>
+					<div class="carousel__content">
+						<p class="carousel__text">
+							Bardzo dobry kurs dla osób które nie maja doświadczenia w
+							programowaniu i chcą rozpocząć przygodę z programowaniem w .Net.
+							Jest to także świetny kurs dla osób które programowały wcześniej
+							w innym języku i chcą w miarę szybko uzyskać wiedze i
+							umiejętności w .Net. Kurs polecam także osobom które być może
+							nie będą bezpośrednio programować ale np. pracują w rożnych
+							zawodach w obszarze inżynierii oprogramowania gdzie na pewno ta
+							dodatkowa wiedza przyda się chociażby w rozmowach z
+							programistami czy klientami. W kursie są zawarte technologie w
+							.Net i są one przedstawione w przystępny sposób. Jest tam także
+							sporo dodatkowych innych informacji z obszaru inżynierii
+							oprogramowania przydatnych zwłaszcza dla początkujących. Kurs
+							jest prowadzony przez super instruktora który bardzo chętnie
+							służy dodatkowymi wyjaśnieniami i pomocą jeśli jest taka
+							potrzeba.
+						</p>
+						<div class="carousel__author">Rafał Laczek</div>
+						<div class="carousel__course">
+							Uczestnik szkolenia Zostań Programistą .NET
+						</div>
+					</div>
+					<div class="carousel__content">
+						<p class="carousel__text">
+							Kurs zostań programistą daje bardzo dobre obycie z kodem i
+							profesjonalne przygotowanie do zostania programistą. Po
+							ukończeniu kursu ma się bardzo dobre przygotowanie z dobrych
+							programistycznych praktyk i czytanie kodu nie jest wyzwaniem.
+							Projekty tworzone w ramach kursu oraz zadań domowych są świetnym
+							uzupełnieniem naszego portfolio i doskonale nadają się do
+							pochwalenia na rozmowie kwalifikacyjnej. Jednym z dużych plusów
+							szkolenia jest prowadzący, który zawsze chętnie pomaga i
+							wyjaśnia wątpliwości. Skończyłem kurs i bardzo szybko udało mi
+							się znaleźć pracę, w której codziennie używam rzeczy, które
+							pamiętam z kursu.
+						</p>
+						<div class="carousel__author">Wiktor Zielonko</div>
+						<div class="carousel__course">
+							Uczestnik szkolenia Zostań Programistą .NET
+						</div>
+					</div>
+					<div class="carousel__content">
+						<p class="carousel__text">
+							Uważam, że każda osoba rozpoczynająca przygodę z testami
+							jednostkowymi powinna zainteresować się tym kursem. Dzięki
+							dobrze przygotowanym materiałem nauczania oraz prostym i
+							zrozumiałym wytłumaczeniem prowadzącego byłem w stanie zrozumieć
+							i wykorzystać wiedzę, dzięki której nie traciłem czasu na błędy
+							swoim brakiem doświadczenia oraz wiedzy. Największą zaletą kursu
+							jest sam prowadzący, z którym jest dobry kontakt. Zawsze
+							odpowiada na pytania oraz pomaga i doradza jak najlepiej napisać
+							odpowiednie testy. Dlatego przy odrobinie zaangażowania
+							ukończysz kurs, w którym nie będzie już więcej pytań oraz
+							nieścisłości ;)
+						</p>
+						<div class="carousel__author">Łukasz Stoch</div>
+						<div class="carousel__course">
+							Uczestnik szkolenia Szkoła Testów Jednostkowych
+						</div>
+					</div>
+					<div class="carousel__content">
+						<p class="carousel__text">
+							Kazimierz w bardzo przystępny sposób tłumaczy poszczególne
+							zagadnienia. Kurs posiada przemyślaną konstrukcję. Widać ogrom
+							pracy włożonej przez Kazimierza w stworzenie kursu oraz jego
+							doświadczenie we wprowadzaniu osób początkujących do tematu
+							programowania. Wielkim plusem jest również możliwość mailowej
+							konsultacji poszczególnych zagadnień z autorem.
+						</p>
+						<div class="carousel__author">Michał Filipiak</div>
+						<div class="carousel__course">
+							Uczestnik szkolenia Zostań Programistą .NET
+						</div>
+					</div>
+					<div class="carousel__content">
+						<p class="carousel__text">
+							Brałem udział już w kilku kursach, ale ten jest zdecydowanie
+							najlepszy :) Najbardziej przypadł mi do gustu tydzień dotyczący
+							wpfa, ponieważ ciężko znaleźć dobre materiały pokazujące jak
+							pisać takie aplikacje.
+						</p>
+						<div class="carousel__author">Piotr</div>
+						<div class="carousel__course">
+							Uczestnik szkolenia Zostań Programistą .NET
+						</div>
+					</div>
+					<div class="carousel__content">
+						<p class="carousel__text">
+							Dla mnie jak najbardziej wszystko OK. Jakość nagrań bardzo
+							dobra, wszystko dobrze opisane, feedback po każdej pracy domowej
+							i co najważniejsze zawsze mogłem liczyć na Twoją pomoc. Co
+							prawda było trochę nauki, ale jak wiesz przeszedłem pozytywnie
+							rozmowę kwalifikacyjną i od miesiąca jestem już programista :D
+							Wielkie dzięki za to co robisz i polecam szkolenie każdemu :)
+						</p>
+						<div class="carousel__author">Wojciech</div>
+						<div class="carousel__course">
+							Uczestnik szkolenia Zostań Programistą .NET
+						</div>
+					</div>
+					<div class="carousel__content">
+						<p class="carousel__text">
+							Fajnie się przerabia kurs, dobra jakość nagrań, prowadzący
+							zawsze szybko odpowiada na pytania a znajomość testów okazała
+							się bardzo przydatna na rozmowie kwalifikacyjnej także warto i
+							polecam.
+						</p>
+						<div class="carousel__author">Piotr M.</div>
+						<div class="carousel__course">
+							Uczestnik szkolenia Szkoła Testów Jednostkowych
+						</div>
+					</div>
+					<div class="carousel__content">
+						<p class="carousel__text">
+							Kurs przeprowadzony bardzo dobrze, merytorycznie, bez zbędnego
+							przedłużania i wyczerpująco dany temat. Kontakt z prowadzącym
+							bardzo dobry, zawsze szybka i dobra pomoc. Bardzo polecam.
+						</p>
+						<div class="carousel__author">Mateusz</div>
+						<div class="carousel__course">
+							Uczestnik szkolenia Zostań Programistą .NET
+						</div>
+					</div>
+				</div>
+
+				<i class="carousel__arrow-right fa-solid fa-circle-arrow-right"></i>
+				<i class="carousel__arrow-left fa-solid fa-circle-arrow-left"></i>
+				<div class="carousel__dots">
+					<span class="carousel__dot carousel__dot--fill"></span>
+					<span class="carousel__dot"></span>
+					<span class="carousel__dot"></span>
+					<span class="carousel__dot"></span>
+					<span class="carousel__dot"></span>
+					<span class="carousel__dot"></span>
+					<span class="carousel__dot"></span>
+					<span class="carousel__dot"></span>
+					<span class="carousel__dot"></span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- start-course -->
+	<section class="block start-course">
+		<div class="container start-course__container">
+			<a class="start-course__btn" href="#">Dołączam do programu</a>
+			<span class="start-course__label">Zapisy zamykamy w piątek (17.02.2023) o 22:00</span>
+			<div class="countdown-timer">
+				<span class="countdown-timer__element">16<small class="countdown-timer__label">Dni</small></span>
+				<span class="countdown-timer__element">13<small class="countdown-timer__label">Godzin</small></span>
+				<span class="countdown-timer__element">43<small class="countdown-timer__label">Minut</small></span>
+				<span class="countdown-timer__element">12<small class="countdown-timer__label">Sekund</small></span>
+			</div>
+		</div>
+	</section>
+
+	<!-- path -->
+
+	<section class="block block--light path">
+		<div class="container path__container">
+			<h2>A czy jest inna droga</h2>
+			<p class="path__text">Oczywiście</p>
+			<p class="path__text">
+				Możesz obejrzeć setki nagrań na YouTube, przeczytać mnóstwo książek,
+				lub zaufać własnej intuicji.
+			</p>
+			<p class="path__text">
+				Możesz zapisać się na bootcamp, który będzie Cię kosztował kilkanaście
+				tysięcy złotych i nie przekaże Ci takiej wiedzy jaką masz w tym
+				szkoleniu.
+			</p>
+			<p class="path__text">
+				Możesz pójść na studia, które trwają 5 lat, a i tak nie nauczą Cię
+				programowania.
+			</p>
+			<p class="path__text">
+				Zamiast tego możesz rozpocząć 21-modułowy program i
+				<strong>przejść przez cały proces tworzenia stron internetowych w HTML i
+					CSS pod okiem mentora</strong>
+				, bez popełniania błędów oraz skupieniu się na tym co najważniejsze.
+			</p>
+			<img class="path__img" src="images/path-programmer.png" alt="Droga od podstaw do programisty" />
+		</div>
+	</section>
+
+	<!-- benefits -->
+	<section class="block benefits">
+		<div class="container">
+			<h2>Dlaczego warto zostać programistą</h2>
+			<article class="benefits__art">
+				<div class="grid grid--1x2">
+					<div class="benefits__info">
+						<h3>Wysokie zarobki</h3>
+						<p class="benefits__text">
+							Możliwe, że w swojej pierwszej pracy nie otrzymasz bardzo dużego
+							wynagrodzenia, ale zdecydowanie programista, to zawód, gdzie
+							możesz dojść do dużych zarobków. Na start możesz liczyć na około
+							3000-5000 zł netto i a z roku na rok możesz te zarobki
+							podawajać.
+						</p>
+					</div>
+					<img class="benefits__img" src="images/benefits-salary.png" alt="Wysokie zarobki" />
+				</div>
+			</article>
+			<article class="benefits__art">
+				<div class="grid grid--1x2">
+					<img class="benefits__img" src="images/benefits-remote-work.png" alt="Praca zdalna" />
+					<div class="benefits__info">
+						<h3>Praca zdalna</h3>
+						<p class="benefits__text">
+							Dużym plusem jest praca zdalna, a co również za tym idzie praca
+							z dowolnego miejsca na świecie. Jest to duże udogodnienie
+							szczególnie w obecnych czasach. Dzięki temu można bardziej
+							skupić się na pracy, oszczędzić dużo czasu, a także pieniędzy na
+							dojazdach do firmy.
+						</p>
+					</div>
+				</div>
+			</article>
+			<article class="benefits__art">
+				<div class="grid grid--1x2">
+					<div class="benefits__info">
+						<h3>Elastyczne godziny pracy</h3>
+						<p class="benefits__text">
+							Elastyczne godziny pracy są kolejnym sporym plusem. Jeżeli mamy
+							jakąś wizytę w urzędzie albo u lekarza lub w dowolnym innym
+							miejscu w środku dnia, to spokojnie w większości firm możesz
+							sobie pozwolić na takie wyjście w środku dnia. Czasem pracowanie
+							8 godzin może być uciążliwe i warto wtedy na przykład zrobić
+							jedną przerwę w środku dnia na trening, czy może krótki spacer i
+							wrócić z nowymi siłami do pracy.
+						</p>
+					</div>
+					<img class="benefits__img" src="images/benefits-flexible-hours.png"
+						alt="Elastyczne godziny pracy" />
+				</div>
+			</article>
+			<article class="benefits__art">
+				<div class="grid grid--1x2">
+					<img class="benefits__img" src="images/benefits-job-offer.png" alt="Dużo ofert pracy" />
+					<div class="benefits__info">
+						<h3>Dużo ofert pracy</h3>
+						<p class="benefits__text">
+							Gdy przeglądasz oferty pracy na różnych portalach z takimi
+							ogłoszeniami, to na pewno zauważyłeś, że mnóstwo jest ofert
+							pracy dla programistów. Oczywiście zdaje sobie sprawę z tego, że
+							większość firm szuka już doświadczonych programistów, nie mniej
+							jednak na młodszych programistów również takich ofert pracy jest
+							sporo.
+						</p>
+					</div>
+				</div>
+			</article>
+			<article class="benefits__art">
+				<div class="grid grid--1x2">
+					<div class="benefits__info">
+						<h3>Szereg innych benefitów</h3>
+						<p class="benefits__text">
+							Jest też szereg innych benefitów, takich jak karty multisport,
+							opieka zdrowotna, dni rozwojowe, lekcje angielskiego itd. W
+							niektórych firmach są tak zwane reset roomy, a w nich różne
+							atrakcje takiej jak piłkarzyki, bilard, czy możliwość grania na
+							konsoli.
+						</p>
+					</div>
+					<img class="benefits__img" src="images/benefits-another.png" alt="Szereg innych benefitów" />
+				</div>
+			</article>
+		</div>
+	</section>
+
+	<!-- price -->
+	<section id="price" class="block block--dark price">
+		<div class="container">
+			<h2>Co otrzymujesz kupując dostep do programu</h2>
+			<ul class="price__list">
+				<li class="price__item">
+					<span class="price__text">21 Modułów Programu - Szkoła HTML i CSS</span>
+					<span class="price__value">Wartość 4997 PLN</span>
+				</li>
+				<li class="price__item">
+					<span class="price__text">Stworzymy 8 Zaawansowanych Kompletnych Projektów</span>
+					<span class="price__value">Wartość 4997 PLN</span>
+				</li>
+				<li class="price__item">
+					<span class="price__text">Dostęp Do Aktualizacji Materiałów Oraz Nowych Materiałów</span>
+					<span class="price__value">Wartość 997 PLN</span>
+				</li>
+				<li class="price__item">
+					<span class="price__text">Praca Domowa Na Koniec Każdego Modułu Wraz z Weryfikacją Przez
+						Instruktora</span>
+					<span class="price__value">Wartość 997 PLN</span>
+				</li>
+				<li class="price__item">
+					<span class="price__text">Opieka Mentora</span>
+					<span class="price__value">Wartość 497 PLN / h</span>
+				</li>
+				<li class="price__item">
+					<span class="price__text">Dostęp Do Prywatnej Społeczności</span>
+					<span class="price__value">Wartość 497 PLN</span>
+				</li>
+				<li class="price__item">
+					<span class="price__text">Dostęp Online Na Żądanie 24/7</span>
+				</li>
+				<li class="price__item">
+					<span class="price__text">Certyfikat Ukończenia Szkolenia</span>
+				</li>
+				<li class="price__item">
+					<span class="price__full-value">Całkowita Wartość 12982 PLN</span>
+				</li>
+				<li class="price__item">
+					<span class="price__total">Tylko w Tej Edycji Cały Pakiet Dostępny Jest Jedynie Za 1297 PLN
+						!!!!!!!!!!!!</span>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- agenda -->
+	<section id="agenda" class="block">
+		<div class="container">
+			<h2>Opis programu</h2>
+			<div class="grid grid--1x3 grid--fit">
+				<div class="card card--success">
+					<header class="card__header card__header--flex">
+						<img class="card__image" src="images/modul1.png" alt="" />
+						<div class="card__module-number">Moduł 1</div>
+						<div class="card__module-name">Strategia</div>
+					</header>
+					<div class="card__body">
+						<ul class="card__list">
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 1:</span>Powitanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 2:</span>Wymagania
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 3:</span>Plan Gry
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 4:</span>Jakie Aplikacje
+								Stworzymy?
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 5:</span>Efekt Końcowy
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 6:</span>Jak Studiować?
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 7:</span>Praca Domowa
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card card--success">
+					<header class="card__header card__header--flex">
+						<img class="card__image" src="images/modul1.png" alt="" />
+						<div class="card__module-number">Moduł 2</div>
+						<div class="card__module-name">Wprowadzenie</div>
+					</header>
+					<div class="card__body">
+						<ul class="card__list">
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 1:</span>Powitanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 2:</span>Jak Działa
+								Internet?
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 3:</span>Narzędzia
+								Programistyczne
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 4:</span>Jak Wygląda Strona
+								Internetowa?
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 5:</span>Proces Tworzenia
+								Stron Internetowych
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 6:</span>Pierwsza Strona
+								Internetowa
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 7:</span>Znaczniki i
+								Atrybuty HTML
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 8:</span>Szkielet Strony
+								Internetowej
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 9:</span>Visual Studio Code
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 10:</span>Najlepsze
+								Rozszerzenia Do Visual Studio Code
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 11:</span>Praca Domowa
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 12:</span>Najczęstsze
+								Pytania
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card card--success">
+					<header class="card__header card__header--flex">
+						<img class="card__image" src="images/modul1.png" alt="" />
+						<div class="card__module-number">Moduł 3</div>
+						<div class="card__module-name">HTML Podstawy</div>
+					</header>
+					<div class="card__body">
+						<ul class="card__list">
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 1:</span>Powitanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 2:</span>Czym jest HTML?
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 3:</span>Przeglądarki
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 4:</span>Tekst
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 5:</span>Znaki Specjalne
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 6:</span>Odstęp Pionowy i
+								Poziomy w Tekście
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 7:</span>Linki
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 8:</span>Kontenery
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 9:</span>Semantyka
+								Znaczników
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 10:</span>Listy
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 11:</span>Tabele
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 12:</span>Zdjęcia
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 13:</span>Wideo
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 14:</span>Audio
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 15:</span>Iframe
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 16:</span>Najlepsze Praktyki
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 17:</span>Praca Domowa
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 18:</span>Rozwiązanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 19:</span>Najczęstsze
+								Pytania
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card card--success">
+					<header class="card__header card__header--flex">
+						<img class="card__image" src="images/modul1.png" alt="" />
+						<div class="card__module-number">Moduł 4</div>
+						<div class="card__module-name">CSS Podstawy</div>
+					</header>
+					<div class="card__body">
+						<ul class="card__list">
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 1:</span>Powitanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 2:</span>Czym Jest CSS?
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 3:</span>Jak Wprowadzać
+								Style?
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 4:</span>Klasy i
+								Identyfikatory
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 5:</span>Podstawowe
+								Selektory
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 6:</span>Kolory
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 7:</span>Tło
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 8:</span>Dziedziczenie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 9:</span>Specyficzność
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 10:</span>Tekst
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 11:</span>Jednostki
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 12:</span>Modele
+								Wyświetlania Elementów
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 13:</span>Przepełnienie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 14:</span>Linki
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 15:</span>Pseudoklasy
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 16:</span>Obramowanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 17:</span>Odstępy
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 18:</span>Model Pudełkowy
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 19:</span>Cienie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 20:</span>Ustawianie Pozycji
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 21:</span>Ukrywanie
+								Elementów
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 22:</span>Listy
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 23:</span>Tabele
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 24:</span>Zdjęcia
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 25:</span>Najlepsze Praktyki
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 26:</span>Praca Domowa
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 27:</span>Rozwiązanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 28:</span>Najczęstsze
+								Pytania
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card card--success">
+					<header class="card__header card__header--flex">
+						<img class="card__image" src="images/modul1.png" alt="" />
+						<div class="card__module-number">Moduł 5</div>
+						<div class="card__module-name">HTML i CSS</div>
+					</header>
+					<div class="card__body">
+						<ul class="card__list">
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 1:</span>Powitanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 2:</span>Narzędzia
+								Programistyczne
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 3:</span>Szybsze Tworzenie
+								Znaczników
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 4:</span>Komentarze
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 5:</span>Normalizacja i
+								Reset
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 6:</span>BEM
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 7:</span>Reużywalność
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 8:</span>Zmienne
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 9:</span>Jak Pisać Czysty
+								CSS?
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 10:</span>CDN
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 11:</span>Ikony
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 12:</span>Czcionki
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 13:</span>Responsywność
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 14:</span>Najpierw Widok Na
+								Telefon
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 15:</span>Pozycjonowanie
+								Elementów
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 16:</span>Pseudoelementy
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 17:</span>Obrazek Jako Tło
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 18:</span>Przezroczystość
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 19:</span>Najlepsze Praktyki
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 20:</span>Praca Domowa
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 21:</span>Rozwiązanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 22:</span>Najczęstsze
+								Pytania
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card card--success">
+					<header class="card__header card__header--flex">
+						<img class="card__image" src="images/modul1.png" alt="" />
+						<div class="card__module-number">Moduł 6</div>
+						<div class="card__module-name">Formularze</div>
+					</header>
+					<div class="card__body">
+						<ul class="card__list">
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 1:</span>Powitanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 2:</span>Czym Są Formularze?
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 3:</span>Pierwszy Formularz
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 4:</span>Tekst
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 5:</span>Przycisk
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 6:</span>Dodatkowe Atrybuty
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 7:</span>Numer
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 8:</span>Hasło
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 9:</span>Pole Wyboru
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 10:</span>Pole Opcji
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 11:</span>Kolor
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 12:</span>Data
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 13:</span>Plik
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 14:</span>Lista Wyboru
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 15:</span>Ukryte Pole
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 16:</span>Testowanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 17:</span>Najlepsze Praktyki
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 18:</span>Praca Domowa
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 19:</span>Rozwiązanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 20:</span>Najczęstsze
+								Pytania
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card card--success">
+					<header class="card__header card__header--flex">
+						<img class="card__image" src="images/modul1.png" alt="" />
+						<div class="card__module-number">Moduł 7</div>
+						<div class="card__module-name">Layouty</div>
+					</header>
+					<div class="card__body">
+						<ul class="card__list">
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 1:</span>Powitanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 2:</span>Czym Jest Layout
+								Strony Internetowej?
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 3:</span>Flexbox
+								Wprowadzenie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 4:</span>Flexbox Przykłady
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 5:</span>Praca Domowa
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 6:</span>Rozwiązanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 7:</span>Grid Wprowadzenie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 8:</span>Grid Przykłady
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 9:</span>Praca Domowa
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 10:</span>Grid Praktyka
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 11:</span>Flexbox vs Grid
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 12:</span>Najlepsze Praktyki
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 13:</span>Praca Domowa
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 14:</span>Rozwiązanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 15:</span>Najczęstsze
+								Pytania
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card card--success">
+					<header class="card__header card__header--flex">
+						<img class="card__image" src="images/modul1.png" alt="" />
+						<div class="card__module-number">Moduł 8</div>
+						<div class="card__module-name">Dynamiczne Elementy</div>
+					</header>
+					<div class="card__body">
+						<ul class="card__list">
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 1:</span>Powitanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 2:</span>Animacje w Praktyce
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 3:</span>Przejścia
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 4:</span>Transformacja
+								Elementów
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 5:</span>Kompletne Animacje
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 6:</span>Zaawansowany
+								Przykład
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 7:</span>Najlepsze Praktyki
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 8:</span>Praca Domowa
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 9:</span>Rozwiązanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 10:</span>Najczęstsze
+								Pytania
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card card--success">
+					<header class="card__header card__header--flex">
+						<img class="card__image" src="images/modul1.png" alt="" />
+						<div class="card__module-number">Moduł 9</div>
+						<div class="card__module-name">Inne Tematy</div>
+					</header>
+					<div class="card__body">
+						<ul class="card__list">
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 1:</span>Powitanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 2:</span>SASS
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 3:</span>Grafiki Na Stronę
+								Internetową
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 4:</span>Pomysły Na Wygląd
+								Strony Internetowej
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 5:</span>JavaScript
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 6:</span>jQuery
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 7:</span>Frameworki
+								JavaScript
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 8:</span>Frameworki CSS
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 9:</span>Najczęstsze Pytania
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card card--success">
+					<header class="card__header card__header--flex">
+						<img class="card__image" src="images/modul1.png" alt="" />
+						<div class="card__module-number">Moduł 10</div>
+						<div class="card__module-name">Projekt Faktura</div>
+					</header>
+					<div class="card__body">
+						<ul class="card__list">
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 1:</span>Przegląd i
+								Omówienie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 2:</span>Szkielet Projektu
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 3:</span>Tworzenie Projektu
+								w HTML
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 4:</span>Nagłówek
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 5:</span>Sekcja Informacje o
+								Firmach
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 6:</span>Sekcja Faktura
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 7:</span>Sekcja Podsumowanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 8:</span>Sekcja Podpisy
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 9:</span>Stopka
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 10:</span>Podsumowanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 11:</span>Praca Domowa
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 12:</span>Najczęstsze
+								Pytania
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card card--success">
+					<header class="card__header card__header--flex">
+						<img class="card__image" src="images/modul1.png" alt="" />
+						<div class="card__module-number">Moduł 11</div>
+						<div class="card__module-name">
+							Optymalizacja Stron Internetowych
+						</div>
+					</header>
+					<div class="card__body">
+						<ul class="card__list">
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 1:</span>Powitanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 2:</span>Walidacja HTML i
+								CSS
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 3:</span>Testowanie
+								Szybkości Strony Internetowej
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 4:</span>Umieszczanie
+								Skryptów i CSS
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 5:</span>Obrazki
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 6:</span>Minifikacja Plików
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 7:</span>Ilość Żądań
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 8:</span>Jak Używać
+								Zewnętrznych Zasobów?
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 9:</span>Cache
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 10:</span>SEO
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 11:</span>Najlepsze Praktyki
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 12:</span>Najczęstsze
+								Pytania
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card card--success">
+					<header class="card__header card__header--flex">
+						<img class="card__image" src="images/modul1.png" alt="" />
+						<div class="card__module-number">Moduł 12</div>
+						<div class="card__module-name">Wdrożenie</div>
+					</header>
+					<div class="card__body">
+						<ul class="card__list">
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 1:</span>Powitanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 2:</span>Domena
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 3:</span>Hosting
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 4:</span>Wdrożenie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 5:</span>Narzędzia
+								Ułatwiające Wdrożenie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 6:</span>Proces Wdrożenia
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 7:</span>Git i Github
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 8:</span>Praca Domowa
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 9:</span>Najczęstsze Pytania
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card card--success">
+					<header class="card__header card__header--flex">
+						<img class="card__image" src="images/modul1.png" alt="" />
+						<div class="card__module-number">Moduł 13</div>
+						<div class="card__module-name">Projekt CV</div>
+					</header>
+					<div class="card__body">
+						<ul class="card__list">
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 1:</span>Przegląd i
+								Omówienie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 2:</span>Szkielet Projektu
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 3:</span>Tworzenie Projektu
+								w HTML
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 4:</span>Sekcja Zdjęcie
+								Profilowe + Kontakt
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 5:</span>Sekcja Umiejętności
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 6:</span>Sekcja Nagrody
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 7:</span>Sekcja Nagłówek +
+								Profil Osobisty
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 8:</span>Sekcja
+								Doświadczenie Zawodowe
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 9:</span>Sekcja
+								Wykształcenie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 10:</span>Podsumowanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 11:</span>Praca Domowa
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 12:</span>Najczęstsze
+								Pytania
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card card--success">
+					<header class="card__header card__header--flex">
+						<img class="card__image" src="images/modul1.png" alt="" />
+						<div class="card__module-number">Moduł 14</div>
+						<div class="card__module-name">Projekt Google</div>
+					</header>
+					<div class="card__body">
+						<ul class="card__list">
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 1:</span>Przegląd i
+								Omówienie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 2:</span>Szkielet Projektu
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 3:</span>Tworzenie Projektu
+								w HTML
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 4:</span>Nagłówek
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 5:</span>Sekcja Główna
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 6:</span>Stopka
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 7:</span>Podsumowanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 8:</span>Praca Domowa
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 9:</span>Najczęstsze Pytania
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card card--success">
+					<header class="card__header card__header--flex">
+						<img class="card__image" src="images/modul1.png" alt="" />
+						<div class="card__module-number">Moduł 15</div>
+						<div class="card__module-name">Projekt Blog</div>
+					</header>
+					<div class="card__body">
+						<ul class="card__list">
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 1:</span>Przegląd i
+								Omówienie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 2:</span>Szkielet Projektu
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 3:</span>Tworzenie Projektu
+								w HTML
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 4:</span>Layout Główny
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 5:</span>Nagłówek
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 6:</span>Menu
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 7:</span>Menu Mobile
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 8:</span>Sekcja Główna
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 9:</span>Sidebar Formularz +
+								Banner
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 10:</span>Sidebar Tagi
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 11:</span>Sidebar Artykuły
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 12:</span>Stopka
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 13:</span>Podsumowanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 14:</span>Praca Domowa
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 15:</span>Najczęstsze
+								Pytania
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card card--success">
+					<header class="card__header card__header--flex">
+						<img class="card__image" src="images/modul1.png" alt="" />
+						<div class="card__module-number">Moduł 16</div>
+						<div class="card__module-name">Projekt YouTube</div>
+					</header>
+					<div class="card__body">
+						<ul class="card__list">
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 1:</span>Przegląd i
+								Omówienie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 2:</span>Szkielet Projektu
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 3:</span>Tworzenie Projektu
+								w HTML
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 4:</span>Nagłówek
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 5:</span>Navbar Mobile
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 6:</span>Navbar Desktop
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 7:</span>Sekcja Kategorie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 8:</span>Sekcja Główna
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 9:</span>Scrollbar
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 10:</span>Podsumowanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 11:</span>Praca Domowa
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 12:</span>Najczęstsze
+								Pytania
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card card--success">
+					<header class="card__header card__header--flex">
+						<img class="card__image" src="images/modul1.png" alt="" />
+						<div class="card__module-number">Moduł 17</div>
+						<div class="card__module-name">Projekt Facebook</div>
+					</header>
+					<div class="card__body">
+						<ul class="card__list">
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 1:</span>Przegląd i
+								Omówienie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 2:</span>Szkielet Projektu
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 3:</span>Tworzenie Projektu
+								w HTML
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 4:</span>Sekcja Konta
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 5:</span>Sekcja Logowanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 6:</span>Stopka
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 7:</span>Podsumowanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 8:</span>Praca Domowa
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 9:</span>Najczęstsze Pytania
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card card--success">
+					<header class="card__header card__header--flex">
+						<img class="card__image" src="images/modul1.png" alt="" />
+						<div class="card__module-number">Moduł 18</div>
+						<div class="card__module-name">Projekt Szkoła HTML CSS 1</div>
+					</header>
+					<div class="card__body">
+						<ul class="card__list">
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 1:</span>Przegląd i
+								Omówienie Strony Głównej
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 2:</span>Szkielet Projektu
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 3:</span>Tworzenie Projektu
+								w HTML
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 4:</span>Nagłówek
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 5:</span>Sekcja Start
+								Szkolenia
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 6:</span>Sekcja o Autorze
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 7:</span>Sekcja Zalety
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 8:</span>Sekcja Opinie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 9:</span>Sekcja Opinie
+								Slajder
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 10:</span>Sekcja Ścieżka
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 11:</span>Sekcja Benefity
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 12:</span>Sekcja Posumowanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 13:</span>Sekcja Agenda
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 14:</span>Sekcja
+								Bezpieczeństwo
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 15:</span>Sekcja Społeczność
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 16:</span>Sekcja Cytat
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 17:</span>Sekcja FAQ
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 18:</span>Stopka
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 19:</span>Podsumowanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 20:</span>Najczęstsze
+								Pytania
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card card--success">
+					<header class="card__header card__header--flex">
+						<img class="card__image" src="images/modul1.png" alt="" />
+						<div class="card__module-number">Moduł 19</div>
+						<div class="card__module-name">Projekt Szkoła HTML CSS 2</div>
+					</header>
+					<div class="card__body">
+						<ul class="card__list">
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 1:</span>Powitanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 2:</span>Efekt Pisania
+								Tekstu
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 3:</span>Efekt Odliczania
+								Czasu
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 4:</span>Efekt Wyliczania
+								Wyniku
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 5:</span>Efekt Przewijania
+								Slajdów
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 6:</span>Efekty Dynamiczne
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 7:</span>Przegląd i
+								Omówienie Gdy Zamknięte Zapisy
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 8:</span>Szkielet Projektu
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 9:</span>Tworzenie Projektu
+								w HTML
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 10:</span>Okno Modalne
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 11:</span>Płynne
+								Wyświetlania Popupa
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 12:</span>Zapis Formularza
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 13:</span>Spinner
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 14:</span>Blokowanie
+								Podglądu Strony
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 15:</span>Podsumowanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 16:</span>Praca Domowa
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 17:</span>Najczęstsze
+								Pytania
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card card--success">
+					<header class="card__header card__header--flex">
+						<img class="card__image" src="images/modul1.png" alt="" />
+						<div class="card__module-number">Moduł 20</div>
+						<div class="card__module-name">Bootstrap</div>
+					</header>
+					<div class="card__body">
+						<ul class="card__list">
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 1:</span>Powitanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 2:</span>Czym Jest
+								Bootstrap?
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 3:</span>Dokumentacja
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 4:</span>Jak Dodać Do
+								Projektu?
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 5:</span>Przyciski
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 6:</span>Kontener
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 7:</span>Breakpointy
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 8:</span>Grid
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 9:</span>Kolory
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 10:</span>Marginesy i
+								Paddingi
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 11:</span>Tekst
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 12:</span>Zdjęcia
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 13:</span>Tabele
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 14:</span>Formularze
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 15:</span>Zakładki
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 16:</span>Flexbox
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 17:</span>Ikony
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 18:</span>Okna Modalne
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 19:</span>Najlepsze Praktyki
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 20:</span>Praca Domowa
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 21:</span>Najczęstsze
+								Pytania
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card card--success">
+					<header class="card__header card__header--flex">
+						<img class="card__image" src="images/modul1.png" alt="" />
+						<div class="card__module-number">Moduł 21</div>
+						<div class="card__module-name">Projekt Sklep Internetowy</div>
+					</header>
+					<div class="card__body">
+						<ul class="card__list">
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 1:</span>Przegląd i
+								Omówienie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 2:</span>Szkielet Projektu
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 3:</span>Tworzenie Projektu
+								w HTML
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 4:</span>Sekcja Górna
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 5:</span>Nagłówek
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 6:</span>Navbar
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 7:</span>Carousel
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 8:</span>Sekcja Produkty
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 9:</span>Sekcja Funkcje
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 10:</span>Sekcja Kategorie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 11:</span>Stopka
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 12:</span>Podsumowanie
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 13:</span>Praca Domowa
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 14:</span>Praca Domowa
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 15:</span>Podsumowanie
+								Szkolenia
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 16:</span>Twoja Ścieżka
+								Programisty
+							</li>
+							<li class="card__item">
+								<span class="card__lesson">Lekcja 17:</span>Najczęstsze
+								Pytania
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- security -->
+	<section id="security" class="block block--light security">
+		<div class="container">
+			<h2>Nasza gwarancja</h2>
+			<div class="grid grid--1x2">
+				<div class="security__customer">
+					<img class="security__image" src="images/security-customer.png" alt="gwarancja satysfkacji" />
+					<h3 class="security__header">
+						Pokochaj program lub zwracamy pieniądze
+					</h3>
+					<p class="security__text">
+						Materiały są przygotowane, tak aby dały Ci mnóstwo korzyści,
+						<strong>więcej wartości niż oczekujesz</strong>. Jeżeli z jakichś
+						powodów program jednak nie będzie dla Ciebie odpowiedni, to
+						wystarczy, że napiszesz na adres
+						kazimierz.szpin@modestprogrammer.pl i zwrócimy Ci 100% Twojej
+						wpłaty. Masz na to 30 dni.
+					</p>
+					<p class="security__text">
+						Naszym celem jest danie Ci jak najwięcej wartości i pokazanie Ci,
+						że ten program pomoże w Twojej karierze.
+						<strong>Zależy nam na Twoim sukcesie</strong>.
+					</p>
+				</div>
+				<div class="security__payment">
+					<img class="security__image" src="images/security-ssl.png" alt="bezpieczne płatności" />
+					<h3 class="security__header">Bezpieczne płatności</h3>
+					<p class="security__text">
+						Twoje zakupy są w 100% bezpieczne. Wszystkie płatności przechodzą
+						przez dedykowany system płatności przelewy24. Każde połączenie
+						jest zabezpieczone <strong>certyfikatem SSL</strong>.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- community -->
+	<section class="block">
+		<div class="container">
+			<h2>Zaufało nam</h2>
+			<div class="grid grid--1x3">
+				<div class="community">
+					<i class="community__icon community__icon--success fa-solid fa-graduation-cap"></i>
+					<div class="community__count">472</div>
+					<div class="community__label">Uczestników Szkoleń</div>
+				</div>
+				<div class="community">
+					<i class="community__icon community__icon--primary fa-brands fa-youtube"></i>
+					<div class="community__count">2820</div>
+					<div class="community__label">Subskrybentów YouTube</div>
+				</div>
+				<div class="community">
+					<i class="community__icon community__icon--info fa-brands fa-facebook"></i>
+					<div class="community__count">960</div>
+					<div class="community__label">Obserwujących Facebook</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- quote -->
+	<section class="block block--dark quote">
+		<div class="container">
+			<blockquote class="quote__block">
+				<i class="quote__icon fa-solid fa-quote-left"></i>
+				<span class="quote__text">Każdy w tym kraju powinien nauczyć się programowania, ponieważ to
+					uczy myślenia.</span>
+				<span class="quote__author">&mdash; Steve Jobs</span>
+			</blockquote>
+		</div>
+	</section>
+
+	<!-- faq -->
+	<section id="faq" class="block faq">
+		<div class="container">
+			<h2>Często zadawane pytania</h2>
+			<section class="faq__section collapsible collapsible--expanded">
+				<div class="collapsible__header">
+					<h4 class="faq__heading">
+						Co muszę umieć, aby dołączyć do programu?
+					</h4>
+					<i class="collapsible__arrow fa-solid fa-circle-arrow-right"></i>
+				</div>
+				<div class="collapsible__content faq__text">
+					W szkoleniu uczymy się HTMLa i CSSa od zera, także nie wymagam od
+					Ciebie żadnej wiedzy na początek. Uczymy się wszystkiego od A do Z -
+					będziemy tworzyć również zaawansowne aplikacje. Także również osoby,
+					które znają już podstawy i chcą zgłębić swoją wiedzy, by czuć się
+					swobodnie po stronie frontendu - również znajdą wiele wartościowej
+					wiedzy dla siebie.
+				</div>
+			</section>
+			<section class="faq__section collapsible">
+				<div class="collapsible__header">
+					<h4 class="faq__heading">
+						Czy mogę otrzymać ten program dożywotnio?
+					</h4>
+					<i class="collapsible__arrow fa-solid fa-circle-arrow-right"></i>
+				</div>
+				<div class="collapsible__content faq__text">
+					Tak. Kupując ten program, otrzymujesz dożywotni dostęp do
+					materiałów.
+				</div>
+			</section>
+			<section class="faq__section collapsible">
+				<div class="collapsible__header">
+					<h4 class="faq__heading">Czy materiały będą w języku polskim?</h4>
+					<i class="collapsible__arrow fa-solid fa-circle-arrow-right"></i>
+				</div>
+				<div class="collapsible__content faq__text">
+					Tak. Wszystkie materiały są w języku polskim.
+				</div>
+			</section>
+			<section class="faq__section collapsible">
+				<div class="collapsible__header">
+					<h4 class="faq__heading">
+						Co w sytuacji gdy nie mogę teraz zacząć szkolenia?
+					</h4>
+					<i class="collapsible__arrow fa-solid fa-circle-arrow-right"></i>
+				</div>
+				<div class="collapsible__content faq__text">
+					Nie ma żadnego problemu, możesz kupić dostęp teraz a zacząć
+					szkolenie z opóźnieniem. Pamiętaj, że kupując dostęp do programu,
+					masz do niego nieograniczony dostęp. Jeżeli będzie kolejna edycja,
+					to cena na pewno pójdzie w górę.
+				</div>
+			</section>
+			<section class="faq__section collapsible">
+				<div class="collapsible__header">
+					<h4 class="faq__heading">
+						Potrzebuję polską fakturę. Czy ją dostane?
+					</h4>
+					<i class="collapsible__arrow fa-solid fa-circle-arrow-right"></i>
+				</div>
+				<div class="collapsible__content faq__text">
+					Tak. System jest zintegrowany z platformą inFakt, która wyśle Ci na
+					maila fakturę po zakupie programu. Dotyczy tylko osób będących
+					podatnikami polskimi.
+				</div>
+			</section>
+			<section class="faq__section collapsible">
+				<div class="collapsible__header">
+					<h4 class="faq__heading">
+						Jak dokonywane są płatności? Czy jest możliwość zakupu szkolenia
+						na raty?
+					</h4>
+					<i class="collapsible__arrow fa-solid fa-circle-arrow-right"></i>
+				</div>
+				<div class="collapsible__content faq__text">
+					Tak, oczywiście jest taka możliwość. Wszystkie płatności są
+					realizowane przez firmę Przelewy24 i ona udostępnia również taką
+					formę płatności.
+				</div>
+			</section>
+			<section class="faq__section collapsible">
+				<div class="collapsible__header">
+					<h4 class="faq__heading">
+						Co jeśli nie jestem zadowolony ze szkolenia?
+					</h4>
+					<i class="collapsible__arrow fa-solid fa-circle-arrow-right"></i>
+				</div>
+				<div class="collapsible__content faq__text">
+					Jeżeli uznasz, że program nie jest dla Ciebie, to otrzymasz zwrot
+					pieniędzy. Możesz zgłosić się o zwrot lub zrezygnować z niego. Masz
+					na to 30 dni od daty zakupu. W taki przypadku napisz na
+					kazimierz.szpin@modestprogrammer.pl, a zwrócę Ci 100% pieniędzy.
+				</div>
+			</section>
+			<section class="faq__section collapsible">
+				<div class="collapsible__header">
+					<h4 class="faq__heading">
+						Co jeżeli mam z czymś problem lub coś jest niejasne?
+					</h4>
+					<i class="collapsible__arrow fa-solid fa-circle-arrow-right"></i>
+				</div>
+				<div class="collapsible__content faq__text">
+					Napisz na adres email:
+					<span class="faq__email">kazimierz.szpin@modestprogrammer.pl</span>
+				</div>
+			</section>
+		</div>
+	</section>
+
+	<!-- start-course -->
+	<section id="join" class="block start-course">
+		<div class="container start-course__container">
+			<a class="start-course__btn" href="#">Dołączam do programu</a>
+			<span class="start-course__label">Zapisy zamykamy w piątek (17.02.2023) o 22:00</span>
+			<div class="countdown-timer">
+				<span class="countdown-timer__element">16<small class="countdown-timer__label">Dni</small></span>
+				<span class="countdown-timer__element">13<small class="countdown-timer__label">Godzin</small></span>
+				<span class="countdown-timer__element">43<small class="countdown-timer__label">Minut</small></span>
+				<span class="countdown-timer__element">12<small class="countdown-timer__label">Sekund</small></span>
+			</div>
+		</div>
+	</section>
+
+	<!-- footer -->
+	<footer class="footer">
+		Copyright © 2023 Szkoła HTML CSS |
+		<a class="footer__link" href="#" target="_blank">Regulamin</a> |
+		<a class="footer__link" href="#" target="_blank">Polityka prywatności</a>
+	</footer>
+
+	<script src="js/main.js"></script>
+</body>
+
+</html>
