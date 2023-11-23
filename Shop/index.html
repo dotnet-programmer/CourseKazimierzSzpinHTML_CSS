@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Sklep Internetowy - ModestProgrammer.pl</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+	<!-- top section -->
+	<section class="bg-dark text-white">
+		<div class="container d-flex flex-column flex-sm-row justify-content-between">
+			<div class="d-flex align-items-center">
+				<i class="bi bi-headset text-success fs-3"></i><span class="px-4 py-3 d-inline-block fs-5">500 123
+					312</span>
+				<i class="bi bi-envelope text-success fs-3"></i><span
+					class="px-4 py-3 d-inline-block fs-5">support@google.com</span>
+			</div>
+			<div class="d-flex align-items-center">
+				<i class="bi bi-box-arrow-in-right text-success fs-3"></i><span
+					class="px-4 py-3 d-inline-block fs-5">Zaloguj się </span>
+				<i class="bi bi-people text-success fs-3"></i><span class="px-4 py-3 d-inline-block fs-5">Zarejestruj
+					konto</span>
+			</div>
+		</div>
+	</section>
+
+	<!-- header -->
+	<header class="header">
+		<div class="container">
+			<div class="row d-flex flex-column flex-lg-row justify-content-between">
+				<div class="col">
+					<a href="#">
+						<img class="py-4 d-block mx-auto d-lg-inline" src="images/logo.png" alt="ModestProgrammer" />
+					</a>
+				</div>
+				<div class="col px-5 px-lg-0 d-flex align-items-center justify-content-center">
+					<div class="w-100 position-relative">
+						<input type="text" placeholder="Szukaj produktu..."
+							class="form-control rounded-5 fs-3 py-3 ps-5" />
+						<i class="bi bi-search position-absolute header__search-icon text-secondary fs-1"></i>
+					</div>
+				</div>
+				<div class="col text-success d-flex align-items-center justify-content-end">
+					<i class="header__menu-icon bi bi-search fs-1 py-4 px-3"></i>
+					<i class="header__menu-icon bi bi-person-circle fs-1 py-4 px-3"></i>
+					<i class="header__menu-icon bi bi-cart fs-1 py-4 px-3"></i>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- navbar -->
+	<nav class="navbar navbar-expand-lg bg-white shadow py-0">
+		<div class="container">
+			<button class="navbar-toggler my-3 fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle bg-success text-white px-4 px-md-5 py-4" href="#"
+							role="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+								class="bi bi-menu-up me-4"></i>
+							Kategorie
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a class="dropdown-item fs-4 py-3 ps-4 px-md-5" href="#"><i
+										class="bi bi-pc-display me-3"></i>Komputery PC</a>
+							</li>
+							<li>
+								<a class="dropdown-item fs-4 py-3 ps-4 px-md-5" href="#"><i
+										class="bi bi-laptop me-3"></i>Laptopy</a>
+							</li>
+							<li>
+								<a class="dropdown-item fs-4 py-3 ps-4 px-md-5" href="#"><i
+										class="bi bi-display me-3"></i>Monitory</a>
+							</li>
+							<li>
+								<a class="dropdown-item fs-4 py-3 ps-4 px-md-5" href="#"><i
+										class="bi bi-cpu me-3"></i>Procesory</a>
+							</li>
+							<li>
+								<a class="dropdown-item fs-4 py-3 ps-4 px-md-5" href="#"><i
+										class="bi bi-motherboard me-3"></i>Płyty główne</a>
+							</li>
+							<li>
+								<a class="dropdown-item fs-4 py-3 ps-4 px-md-5" href="#"><i
+										class="bi bi-hdd me-3"></i>Dyski</a>
+							</li>
+							<li>
+								<a class="dropdown-item fs-4 py-3 ps-4 px-md-5" href="#"><i
+										class="bi bi-keyboard me-3"></i>Klawiatury</a>
+							</li>
+							<li>
+								<a class="dropdown-item fs-4 py-3 ps-4 px-md-5" href="#"><i
+										class="bi bi-mouse2 me-3"></i>Myszki</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+				<ul class="navbar-nav">
+					<li class="nav-item px-3">
+						<a class="nav-link text-dark fs-3" aria-current="page" href="#">Strona główna</a>
+					</li>
+					<li class="nav-item px-3">
+						<a class="nav-link text-dark fs-3" aria-current="page" href="#">O nas</a>
+					</li>
+					<li class="nav-item px-3">
+						<a class="nav-link text-dark fs-3" aria-current="page" href="#">Kontakt</a>
+					</li>
+					<li class="nav-item px-3">
+						<a class="nav-link text-dark fs-3" aria-current="page" href="#">Blog</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- carousel -->
+	<div id="carouselExampleIndicators" class="carousel slide bg-light" data-bs-ride="carousel">
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+				class="active bg-success" aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"
+				class="bg-success"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"
+				class="bg-success"></button>
+		</div>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<div class="container">
+					<div class="row">
+						<div
+							class="col-12 col-md-6 d-flex flex-column justify-content-center gap-3 carousel__first-col">
+							<div class="fw-bold fs-1">Do 50% zniżki</div>
+							<h2 class="text-success">Monitory 25" 280Hz</h2>
+							<p class="fs-4">
+								U nas każdy znajdzie coś dla siebie. Wszystkie monitory w
+								różnych wariantów sprzedażowych
+							</p>
+							<a class="btn btn-secondary btn-lg carousel__btn-cta py-3" href="#">KUP TERAZ</a>
+						</div>
+						<div
+							class="col-12 col-md-6 d-flex justify-content-center align-items-center carousel__second-col">
+							<img src="images/monitor.png" class="d-block carousel__image" alt="..." />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="container">
+					<div class="row">
+						<div
+							class="col-12 col-md-6 d-flex flex-column justify-content-center gap-3 carousel__first-col">
+							<div class="fw-bold fs-1">Do 25% zniżki</div>
+							<h2 class="text-success">Laptop DELL Wind</h2>
+							<p class="fs-4">
+								U nas każdy znajdzie coś dla siebie. Wszystkie monitory w
+								różnych wariantów sprzedażowych
+							</p>
+							<a class="btn btn-secondary btn-lg carousel__btn-cta py-3" href="#">KUP TERAZ</a>
+						</div>
+						<div
+							class="col-12 col-md-6 d-flex justify-content-center align-items-center carousel__second-col">
+							<img src="images/laptop.png" class="d-block carousel__image" alt="..." />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="container">
+					<div class="row">
+						<div
+							class="col-12 col-md-6 d-flex flex-column justify-content-center gap-3 carousel__first-col">
+							<div class="fw-bold fs-1">Osobisty kompter</div>
+							<h2 class="text-success">Komputery PC</h2>
+							<p class="fs-4">
+								U nas każdy znajdzie coś dla siebie. Wszystkie monitory w
+								różnych wariantów sprzedażowych
+							</p>
+							<a class="btn btn-secondary btn-lg carousel__btn-cta py-3" href="#">KUP TERAZ</a>
+						</div>
+						<div
+							class="col-12 col-md-6 d-flex justify-content-center align-items-center carousel__second-col">
+							<img src="images/pc.png" class="d-block carousel__image" alt="..." />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+			data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+			data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
+	</div>
+
+	<!-- products -->
+	<section class="container products">
+		<h3 class="mx-5 mx-sm-0 products__heading">Popularne produkty</h3>
+		<div class="row">
+			<div class="col-12 col-sm-6 col-lg-3 p-5">
+				<div class="card shadow bg-light border-0 position-relative">
+					<img src="images/product-komp-1.png" class="card-img-top p-5" alt="..." />
+					<div class="card-body">
+						<h4 class="fw-bold mx-4 card__title">Komputer PC 1</h4>
+						<div class="text-success mx-4 my-2">
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-half"></i>
+							<i class="bi bi-star"></i>
+						</div>
+						<div class="d-flex justify-content-between mx-4">
+							<div class="fw-bold">100,99 zł</div>
+							<i
+								class="text-success bi bi-cart-plus border border-success border-1 px-2 rounded-3 mb-3 card__icon"></i>
+						</div>
+					</div>
+					<span class="card__badge position-absolute badge rounded-pill bg-danger">
+						TOP
+					</span>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-lg-3 p-5">
+				<div class="card shadow bg-light border-0 position-relative">
+					<img src="images/product-fotel.png" class="card-img-top p-5" alt="..." />
+					<div class="card-body">
+						<h4 class="fw-bold mx-4 card__title">Fotel gamingowy</h4>
+						<div class="text-success mx-4 my-2">
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-half"></i>
+							<i class="bi bi-star"></i>
+						</div>
+						<div class="d-flex justify-content-between mx-4">
+							<div class="fw-bold">100,99 zł</div>
+							<i
+								class="text-success bi bi-cart-plus border border-success border-1 px-2 rounded-3 mb-3 card__icon"></i>
+						</div>
+					</div>
+					<span class="card__badge position-absolute badge rounded-pill bg-danger">
+						TOP
+					</span>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-lg-3 p-5">
+				<div class="card shadow bg-light border-0 position-relative">
+					<img src="images/product-klawiatura.png" class="card-img-top p-5" alt="..." />
+					<div class="card-body">
+						<h4 class="fw-bold mx-4 card__title">Klawiatura XX12</h4>
+						<div class="text-success mx-4 my-2">
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-half"></i>
+							<i class="bi bi-star"></i>
+						</div>
+						<div class="d-flex justify-content-between mx-4">
+							<div class="fw-bold">100,99 zł</div>
+							<i
+								class="text-success bi bi-cart-plus border border-success border-1 px-2 rounded-3 mb-3 card__icon"></i>
+						</div>
+					</div>
+					<span class="card__badge position-absolute badge rounded-pill bg-danger">
+						TOP
+					</span>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-lg-3 p-5">
+				<div class="card shadow bg-light border-0 position-relative">
+					<img src="images/product-komp-2.png" class="card-img-top p-5" alt="..." />
+					<div class="card-body">
+						<h4 class="fw-bold mx-4 card__title">Komputer PC 2</h4>
+						<div class="text-success mx-4 my-2">
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-half"></i>
+							<i class="bi bi-star"></i>
+						</div>
+						<div class="d-flex justify-content-between mx-4">
+							<div class="fw-bold">100,99 zł</div>
+							<i
+								class="text-success bi bi-cart-plus border border-success border-1 px-2 rounded-3 mb-3 card__icon"></i>
+						</div>
+					</div>
+					<span class="card__badge position-absolute badge rounded-pill bg-danger">
+						TOP
+					</span>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-lg-3 p-5">
+				<div class="card shadow bg-light border-0 position-relative">
+					<img src="images/product-laptop.png" class="card-img-top p-5" alt="..." />
+					<div class="card-body">
+						<h4 class="fw-bold mx-4 card__title">Laptop YT 2.0</h4>
+						<div class="text-success mx-4 my-2">
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-half"></i>
+							<i class="bi bi-star"></i>
+						</div>
+						<div class="d-flex justify-content-between mx-4">
+							<div class="fw-bold">100,99 zł</div>
+							<i
+								class="text-success bi bi-cart-plus border border-success border-1 px-2 rounded-3 mb-3 card__icon"></i>
+						</div>
+					</div>
+					<span class="card__badge position-absolute badge rounded-pill bg-danger">
+						TOP
+					</span>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-lg-3 p-5">
+				<div class="card shadow bg-light border-0 position-relative">
+					<img src="images/product-mysz-1.png" class="card-img-top p-5" alt="..." />
+					<div class="card-body">
+						<h4 class="fw-bold mx-4 card__title">Myszka komputerowa 1</h4>
+						<div class="text-success mx-4 my-2">
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-half"></i>
+							<i class="bi bi-star"></i>
+						</div>
+						<div class="d-flex justify-content-between mx-4">
+							<div class="fw-bold">100,99 zł</div>
+							<i
+								class="text-success bi bi-cart-plus border border-success border-1 px-2 rounded-3 mb-3 card__icon"></i>
+						</div>
+					</div>
+					<span class="card__badge position-absolute badge rounded-pill bg-danger">
+						TOP
+					</span>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-lg-3 p-5">
+				<div class="card shadow bg-light border-0 position-relative">
+					<img src="images/product-monitor-1.png" class="card-img-top p-5" alt="..." />
+					<div class="card-body">
+						<h4 class="fw-bold mx-4 card__title">Monitor UU2</h4>
+						<div class="text-success mx-4 my-2">
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-half"></i>
+							<i class="bi bi-star"></i>
+						</div>
+						<div class="d-flex justify-content-between mx-4">
+							<div class="fw-bold">100,99 zł</div>
+							<i
+								class="text-success bi bi-cart-plus border border-success border-1 px-2 rounded-3 mb-3 card__icon"></i>
+						</div>
+					</div>
+					<span class="card__badge position-absolute badge rounded-pill bg-danger">
+						TOP
+					</span>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-lg-3 p-5">
+				<div class="card shadow bg-light border-0 position-relative">
+					<img src="images/product-mysz-2.png" class="card-img-top p-5" alt="..." />
+					<div class="card-body">
+						<h4 class="fw-bold mx-4 card__title">Mysz IIU21</h4>
+						<div class="text-success mx-4 my-2">
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-half"></i>
+							<i class="bi bi-star"></i>
+						</div>
+						<div class="d-flex justify-content-between mx-4">
+							<div class="fw-bold">100,99 zł</div>
+							<i
+								class="text-success bi bi-cart-plus border border-success border-1 px-2 rounded-3 mb-3 card__icon"></i>
+						</div>
+					</div>
+					<span class="card__badge position-absolute badge rounded-pill bg-danger">
+						TOP
+					</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- feature -->
+	<section class="bg-light feature">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-6 col-md-3 pb-5 pb-md-0">
+					<div class="d-flex flex-column flex-lg-row align-items-center justify-content-center gap-4">
+						<i
+							class="bi bi-currency-dollar text-success border border-1 border-success rounded-circle fs-1 px-4 py-3"></i>
+						<div class="fs-4">
+							<div class="fw-bold text-uppercase text-center text-lg-start">
+								Najniższe ceny
+							</div>
+							<div class="text-secondary text-center text-lg-start">
+								Już od 9,99 zł
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3 pb-5 pb-md-0">
+					<div class="d-flex flex-column flex-lg-row gap-4 align-items-center justify-content-center">
+						<i
+							class="bi bi-truck text-success border border-1 border-success rounded-circle fs-1 px-4 py-3"></i>
+						<div class="fs-4">
+							<div class="fw-bold text-uppercase text-center text-lg-start">
+								Darmowa dostawa
+							</div>
+							<div class="text-secondary text-center text-lg-start">0 zł</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3 pb-5 pb-sm-0">
+					<div class="d-flex flex-column flex-lg-row gap-4 align-items-center justify-content-center">
+						<i
+							class="bi bi-person text-success border border-1 border-success rounded-circle fs-1 px-4 py-3"></i>
+						<div class="fs-4">
+							<div class="fw-bold text-uppercase text-center text-lg-start">
+								Satysfakcja klienta
+							</div>
+							<div class="text-secondary text-center text-lg-start">
+								Jesteś najważniejszy
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3">
+					<div class="d-flex flex-column flex-lg-row gap-4 align-items-center justify-content-center">
+						<i
+							class="bi bi-chat-dots text-success border border-1 border-success rounded-circle fs-1 px-4 py-3"></i>
+						<div class="fs-4">
+							<div class="fw-bold text-uppercase text-center text-lg-start">
+								Najlepsze opinie
+							</div>
+							<div class="text-secondary text-center text-lg-start">
+								Ponad 100 klientów
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- categories -->
+	<section class="container categories">
+		<h3 class="categories__heading mx-5 mx-sm-0 pb-5">Popularne kategorie</h3>
+		<div class="row">
+			<div class="col-12 col-md-6 col-xl-3 py-3">
+				<a href="#" class="fs-2 py-4 px-5 bg-light shadow d-block w-75 mx-auto text-center text-dark">
+					<i class="bi bi-pc-display text-success fs-1 me-3"></i>
+					Komputery PC
+				</a>
+			</div>
+			<div class="col-12 col-md-6 col-xl-3 py-3">
+				<a class="fs-2 py-4 px-5 bg-light shadow w-75 d-block text-center mx-auto text-dark" href="#"><i
+						class="bi bi-laptop me-3 text-success fs-1"></i>Laptopy</a>
+			</div>
+			<div class="col-12 col-md-6 col-xl-3 py-3">
+				<a class="fs-2 py-4 px-5 bg-light shadow w-75 d-block text-center mx-auto text-dark" href="#"><i
+						class="bi bi-display me-3 text-success fs-1"></i>Monitory</a>
+			</div>
+			<div class="col-12 col-md-6 col-xl-3 py-3">
+				<a class="fs-2 py-4 px-5 bg-light shadow w-75 d-block text-center mx-auto text-dark" href="#"><i
+						class="bi bi-cpu me-3 text-success fs-1"></i>Procesory</a>
+			</div>
+			<div class="col-12 col-md-6 col-xl-3 py-3">
+				<a class="fs-2 py-4 px-5 bg-light shadow w-75 d-block text-center mx-auto text-dark" href="#"><i
+						class="bi bi-motherboard me-3 text-success fs-1"></i>Płyty
+					główne</a>
+			</div>
+			<div class="col-12 col-md-6 col-xl-3 py-3">
+				<a class="fs-2 py-4 px-5 bg-light shadow w-75 d-block text-center mx-auto text-dark" href="#"><i
+						class="bi bi-hdd me-3 text-success fs-1"></i>Dyski</a>
+			</div>
+			<div class="col-12 col-md-6 col-xl-3 py-3">
+				<a class="fs-2 py-4 px-5 bg-light shadow w-75 d-block text-center mx-auto text-dark" href="#"><i
+						class="bi bi-keyboard me-3 text-success fs-1"></i>Klawiatury</a>
+			</div>
+			<div class="col-12 col-md-6 col-xl-3 py-3">
+				<a class="fs-2 py-4 px-5 bg-light shadow w-75 d-block text-center mx-auto text-dark" href="#"><i
+						class="bi bi-mouse2 me-3 text-success fs-1"></i>Myszki</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- footer -->
+	<footer class="bg-dark text-white pt-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-6">
+					<div class="d-flex flex-column align-items-center">
+						<img src="images/logo-white.png" alt="logo" class="py-4 d-block mx-auto" />
+						<div>
+							<div class="fw-bold fs-3 pb-2">Dane kontaktowe</div>
+							<div class="fs-5 pb-2">
+								<span class="fw-bold">Adres:</span> 00-222 Warszawa, ul.
+								Kasztanowa 2
+							</div>
+							<div class="fs-5 pb-2">
+								<span class="fw-bold">E-mail:</span> support@shop.pl
+							</div>
+							<div class="fs-5 pb-2">
+								<span class="fw-bold">Telefon:</span> 500 200 200
+							</div>
+							<div class="fs-5 pb-2">
+								<span class="fw-bold">Dostępność:</span> 6:00-22:00
+								(codziennie)
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 col-md-3">
+					<div class="d-flex justify-content-center">
+						<div>
+							<div class="fs-3 fw-bold mt-5">O nas</div>
+							<ul class="list-unstyled ps-0">
+								<li><a href="#" class="text-white fs-5">O nas</a></li>
+								<li><a href="#" class="text-white fs-5">Kontakt</a></li>
+								<li><a href="#" class="text-white fs-5">Regulamin</a></li>
+								<li>
+									<a href="#" class="text-white fs-5">Polityka prywatności</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 col-md-3">
+					<div class="d-flex justify-content-center">
+						<div>
+							<div class="fs-3 fw-bold mt-5">Moje konto</div>
+							<ul class="list-unstyled ps-0">
+								<li>
+									<a href="#" class="text-white fs-5">Zarejestruj się</a>
+								</li>
+								<li><a href="#" class="text-white fs-5">Zaloguj się</a></li>
+								<li><a href="#" class="text-white fs-5">Koszyk</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fs-5 text-center py-3 mt-5 text-light">
+				&copy; 2023 Copyright - www.modestprogrammer.pl
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

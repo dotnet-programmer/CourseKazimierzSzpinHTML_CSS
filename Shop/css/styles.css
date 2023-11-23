@@ -1,0 +1,140 @@
+:root {
+	--color-success: #198754;
+}
+
+/* typography */
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 2rem;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	line-height: 1.1;
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+h2 {
+	font-size: 4.5rem;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 3rem;
+}
+
+h4 {
+	font-size: 1.8rem;
+}
+
+@media screen and (min-width: 768px) {}
+
+/* links */
+a:hover,
+a:active,
+a:visited,
+a:link {
+	text-decoration: none;
+}
+
+/* header */
+.header__search-icon {
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+.header__menu-icon {
+	cursor: pointer;
+	transition: transform .2s;
+}
+
+.header__menu-icon:hover {
+	transform: scale(1.2);
+}
+
+/* carousel */
+.carousel__first-col {
+	padding: 2rem 8rem;
+}
+
+.carousel__second-col {
+	padding: 2rem 0;
+}
+
+.carousel__image {
+	width: 400px;
+}
+
+.carousel__btn-cta {
+	width: 160px;
+}
+
+@media screen and (min-width: 768px) {
+	.carousel__first-col {
+		padding: 5rem;
+	}
+}
+
+/* products */
+.products__heading {
+	margin-top: 6rem;
+}
+
+/* card */
+
+.card__title,
+.card__icon {
+	cursor: pointer;
+}
+
+.card {
+	transition: all .4s;
+}
+
+.card:hover {
+	transform: scale(1.05);
+	background: #fff !important;
+}
+
+.card__title:hover {
+	color: var(--color-success);
+}
+
+.card__icon:hover {
+	background: var(--color-success);
+	color: #fff !important;
+}
+
+.card__badge {
+	right: 1rem;
+	top: 1rem;
+}
+
+/* feature */
+.feature {
+	padding-top: 5rem;
+	margin-top: 4rem;
+	padding-bottom: 5rem;
+}
+
+/* categories */
+.categories {
+	margin-top: 6rem;
+	padding-bottom: 5rem;
+}
+
+.categories__heading {
+	margin-top: 6rem;
+}
