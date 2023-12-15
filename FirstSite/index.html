@@ -2,16 +2,23 @@
 <!DOCTYPE html>
 
 <!-- określenie języka strony -->
-<html lang="pl">
+<html lang="pl" style="scroll-behavior: smooth">
 
 <!-- część odpowiedzialna za informacje o stronie -->
 
 <head>
-	<!-- kodowanie znaków -->
+	<!-- kodowanie znaków, najpopularniejsze UTF-8 -->
 	<meta charset="UTF-8">
 
 	<!-- wpis konieczny do działania jako strona responsywna -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- wpis oznaczający opis strony, używany przez wyszukiwarki -->
+	<meta name="description"
+		content="Opis mojej strony. Krótko, zwięźle i na temat bez sztucznego powielania słów kluczowych itp">
+
+	<!-- wpis oznaczający autora strony-->
+	<meta name="author" content="Michał Łęczyński">
 
 	<!-- tekst wyświetlany na karcie w przeglądaece -->
 	<title>Tytuł strony</title>
@@ -105,9 +112,23 @@
 	oznacza, że część zasobów takich jak ikony są na zewnętrznych serwerach
 -->
 
+<!-- 
+	ENCJA - znaki specjalne:
+
+	& - SHIFT + 7
+	&lt;    Less than     <
+	&quot;  Quote         "
+	&apos;  Apostrophe    '
+	&amp;   Ampersand     &            
+	&nbsp;  non breaking space, czyli po prostu wstawienie następnej spacji
+
+	Jeśli tekst jest kodowany w UTF-8 w edytorze, można bezpośrednio w tekście wklejać znaki - ∫
+-->
+
 <!-- sekcja w której znajduje się widzialna część strony -->
 
 <body>
+	<div class="sticker">Pozycja fixed</div>
 
 	<ul class="homework">
 		<li><a href="/forms.html">Formularze</a></li>
@@ -119,6 +140,8 @@
 		<li><a href="/homework4.html">Praca domowa 4</a></li>
 	</ul>
 
+	<div class="sticker-2">Pozycja sticky - zacznij scrollować w dół</div>
+
 	<div class="hero">
 		<div class="hero__bg"></div>
 		<p class="hero__text">Potrzebujesz stronę internetową dla Twojej firmy? Jesteś w dobrym miejscu!</p>
@@ -128,8 +151,7 @@
 		<i class="fa-solid fa-computer container__icon"></i>
 	</div>
 
-	<div class="sticker">Pozycja fixed</div>
-
+	<!-- kropka w adresie pliku oznacza, że ścieżka zaczyna się od katalogu głównego -->
 	<header class="header">
 		<img class="header__image" src="./images/header.png" alt="header image"></img>
 		<img class="header__image" src="./images/header.png" alt="header image"></img>
@@ -157,9 +179,13 @@
 	<!-- ikona z CDN, potrzebny link do serera CDN w sekcji Head -->
 	<i class="fa-solid fa-computer first-icon"></i>
 
+	<!-- kotwice na stronie 1: -->
 	<div id="page_top">
 		Tekst <strong>pogrubiony, <em>pogrubiony i pochylony, <u>pogrubiony, pochylony i podkreślony</u></em></strong>
 	</div>
+
+	<!-- kotwice na stronie 2: -->
+	<a name="page-top-2"></a>
 
 	<h1 style="color: blue;" class="main">Nagłówek h1</h1>
 
@@ -281,6 +307,7 @@
 
 	<h3 class="highlight">Przykład tabeli</h3>
 	<table class="table table-main">
+		<caption>Jakaś tabelka - caption</caption>
 		<thead>
 			<tr class="highlight">
 				<th>nagłówek 1</th>
@@ -517,6 +544,108 @@
 		<div class="button__text">Kliknij</div>
 	</button>
 
+	<!-- podpowiedzi -->
+	<p>Wyświetlanie dymku z podpowiedzią po najechaniu myszką na tekst: <br>
+		Najedź kursorem <b title="Okno podpowiedzi!!!">tutaj!</b></p>
+	<p>Wyświetlanie dymku z podpowiedzią po najechaniu myszką na tekst: <br>
+		To samo co wyżej, tylko użyty span: <span title="Okno podpowiedzi!!!">tutaj!</span></p>
+
+	<dl> <!-- definition list (lista definicji) -->
+		<dt>&lt;p></dt> <!-- definition term (wyrażenie/określenie) -->
+		<dd>z ang. <b>p</b>aragraph - czyli akapit </dd> <!-- definition description (opis) -->
+
+		<dt>&lt;br></dt>
+		<dd><b>br</b>eak - służy do zasymulowania tego co robi klawisz "ENTER"</dd>
+
+		<dt>&lt;body></dt>
+		<dd>Jeden z głównych tagów określający ciało strony. Zamieszczamy w nim całą treść strony.</dd>
+	</dl>
+
+	<!-- Cytowanie i przytaczanie wypowiedzi - różnice między tagami q, blockquote, cite  -->
+	<p>
+		<cite>Albert Einstein</cite>
+	<blockquote>&bdquo;Wiadomo, że taki a taki pomysł jest nie do zrealizowania. Ale żyje sobie jakiś nieuk, który o tym
+		nie wie. I on właśnie dokonuje tego wynalazku.&rdquo;</blockquote>
+	</p>
+
+	<!-- q - quote -->
+	<p>Adam powiedział: <q>Przekaż jej, że jej nie lubię</q></p>
+
+	<p>
+		<q>Lepiej zaliczać się do niektórych, niż do wszystkich.</q>
+		<cite>Andrzej Sapkowski, Krew elfów</cite>
+	</p>
+
+	<!-- 
+		Skróty i definicje:
+		abbr - abbreviation - skrót
+		dfn - define - definiować
+	-->
+	<p>
+		<dfn><abbr title="HypertText Markup Language">HTML</abbr></dfn> to język znaczników do tworzenia stron WWW.
+	</p>
+
+	<!-- 
+		index górny i dolny:
+		<sub> - subscript - indeks 
+		<sup> - superscript - napisany u góry
+	-->
+	H<sub>2</sub>O
+	<br>
+	x<sup>2</sup> = 0
+
+	<!--
+		Formatowanie tekstu - zachowanie formatowania, oznaczanie kodu, zmienne
+		pre - pre formatted (sformatowany tekst przed wklejeniem)
+		code - tag używany do oznaczenia kodu (by odróżnić go od tekstu)
+		var - variable (zmienna) - do pokazania, że w tekście jest zmienna
+	-->
+	<pre>
+	<code>
+	#include <iostream>
+	using namespace std;
+	int main()
+	{
+		cout << "Hello world!" << endl;
+		return 0;
+	}
+	</code>
+	</pre>
+	<p>Liczba 70 jest o 40% większa od liczby <var>c</var>. Jaką wartość ma liczba <var>c</var>?</p>
+
+	<!--
+		Nazwane atrybuty: ::before, ::after
+		before - przed
+		after - po
+		data-help - własny atrybut, musi zaczynać się od data- a później własna nazwa takiego atrybutu
+	-->
+	<p>
+		<span data-help="To jest pomocna informacja!">Help me!</span>
+		<span data-help="Inna informacja">Help me!</span>
+		<span data-help="Coś jeszcze innego!">Help me!</span>
+	</p>
+
+	<!-- sposób na zrobienie menu rozwijanego -->
+	<div id="menu-rozwijane">
+		<ul>
+			<li>
+				<a href="#">Kursy Programowania</a>
+				<ul class="submenu">
+					<li><a href="#">Java</a></li>
+					<li><a href="#">Python</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Kursy Tworzenia stron WWW</a>
+				<ul class="submenu">
+					<li><a href="#">JavaScript</a></li>
+					<li><a href="#">HTML</a></li>
+					<li><a href="#">PHP</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
 	<p class="text">
 		Jakiś długi wypełniacz tekstu
 		<br>
@@ -556,9 +685,25 @@
 
 	<h3 id="summary">Podsumowanie</h3>
 
+	<!-- znacznik HTML do oznaczania adresu -->
+	<address>
+		Arkadiusz Włodarczyk<br>
+		<!-- oznaczenie linka jako numer telefonu, w telefonie otworzy apkę do dzwonienia -->
+		<a href="tel:+48666777888">666 777 888</a><br>
+		<!-- oznaczenie linka jako adres email, otworzy domyślną aplikazcję pocztową -->
+		<a href="mailto:mail@mail.com?subject=Zapytanie ze strony">mail@mail.com</a>
+	</address>
+
 	&#169; - copyright &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; znak specjalny nbsp; to spacje
 
+	<!-- kotwice na stronie 1: -->
 	<a href="#page_top">Przejdź na górę strony</a>
+
+	<!-- kotwice na stronie 2: -->
+	<a href="#page_top-2">Przejdź na górę strony</a>
+
+	<!-- kotwice na stronie 3: sam znak # lub #top jest odczytywany przez przeglądarki jako porwót na początek strony -->
+	<a href="#">Przejdź na górę strony</a>
 
 </body>
 

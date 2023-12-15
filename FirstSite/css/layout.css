@@ -191,6 +191,10 @@
 
 	grid-template-rows: 100px auto 20px 100px 200px;
 
+	/* ustawienie, że każdy kolejny nowo dodany wiersz będzie miał 200px wysokości */
+	/* grid-auto-rows: 200px; */
+
+	/* przestrzenie między rzędami / kolumnami / wszystko na raz */
 	row-gap: 10px;
 	column-gap: 14px;
 	gap: 10px 14px;

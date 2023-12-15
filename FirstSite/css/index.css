@@ -520,7 +520,18 @@ hover - hand over */
 
 /* !strony responsywne */
 
-/* ustawianie pozycji elementu względem innego elementu */
+/* 
+    ustawianie pozycji elementu względem innego elementu
+
+    static - statyczny 
+    relative - względne - względem siebie (element jest przesuwany o podane wartości, ale nadal zajmuje to miejsce wśród innych elementów
+    absolute - bezwględny/niezależny - nie zajmuje miejsca wśród innych elementów, bez ustawienia elementu nadrzędnego na relative, będzie pozycjonowany względem przeglądarki
+    fixed - ustalony (przyczepiony do pewnego obszaru względem ekranu po załadowaniu, zostaje na swoim miejscu nawet jak strona jest dłuższa niż ekran i pojawia się scroll)
+    sticky - element zostaje na stronie, ale trzeba ustawić wartość top:
+        przykład 50px, wtedy gdy między górną częścią strony a początkiem elementu zostanie 50px, to element zostanie na swoim miejscu i będzie cały czas pomimo scrollowania
+    
+    dostępne pozycje wg. których można ustalić położenie: top, right, bottom, left
+*/
 .container {
     width: 90%;
     height: 200px;
@@ -550,6 +561,17 @@ hover - hand over */
     background: #ff0000;
     /* ustawienie z-index na większą wartość powoduje, że element jest nad elementami z niższą wartościa z-index, domyślnie jest 0, ustawienie ujemne - element jest pod innymi */
     z-index: -1;
+}
+
+.sticker-2 {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    padding: 1.2rem;
+    color: #ffffff;
+    background: #471212;
+    margin: 0;
+    z-index: 1;
 }
 
 /* !ustawianie pozycji elementu względem innego elementu */
@@ -612,6 +634,20 @@ hover - hand over */
     content: '✅';
 }
 
+/* odniesienie do elementu z własnym atrybutem data-help */
+[data-help] {
+    cursor: help;
+}
+
+[data-help]:hover::after {
+    /* attr - attribute - atrybut - używany do pobrania wartości z atrybutu o podanej nazwie*/
+    content: attr(data-help);
+    background-color: rgba(0, 255, 255, 0.781);
+    padding: 15px;
+    position: absolute;
+    border-radius: 10px;
+}
+
 /* !pseudoelementy */
 
 /* obraz jako tło strony */
@@ -650,3 +686,61 @@ hover - hand over */
 }
 
 /* !obraz jako tło strony */
+
+/* menu rozwijane */
+#menu-rozwijane {
+    background: #0f3250;
+    padding: 15px;
+}
+
+#menu-rozwijane a {
+    color: white;
+    text-decoration: none;
+}
+
+#menu-rozwijane>ul>li>a {
+    padding: 20px 0;
+    margin-left: 10px;
+}
+
+#menu-rozwijane ul {
+    list-style-type: none;
+}
+
+#menu-rozwijane ul li {
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: 40px;
+    display: none;
+}
+
+#menu-rozwijane ul li:hover .submenu {
+    display: block;
+}
+
+.submenu::before {
+    content: '';
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    top: -10px;
+}
+
+.submenu a {
+    background-color: #0f3250;
+    display: block;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+}
+
+.submenu a:hover {
+    background-color: rgba(15, 50, 80, 0.9);
+}
+
+/* !menu rozwijane */

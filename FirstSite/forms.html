@@ -59,6 +59,10 @@
 				- minlength - minialna wymagana ilość znaków
 				- maxlength - maksymalna dopuszczalna ilość znaków
 				- value - wartość domyślna
+				- autocomplete - automatyczne wypełnianie
+				- size - rozmiar (w ilości znaków, czyli 2 oznacza szerokość na wprowadzenie 2 znaków)
+				- placeholder - teskt wyświetlany w pustym polu
+				- checked - zaznaczenie
 			-->
 			<input class="form__text" type="text" id="add" name="add" placeholder="Dodatkowe pole" required autofocus
 				disabled readonly minlength="3" maxlength="10" value="Test">
@@ -100,16 +104,16 @@
 				- value - może być to samo co w id, po zaznaczeniu ta wartość jest przesyłana w grupie którą tworzy name
 				zazwyczaj najpierw jest input a po nim etykieta 
 			-->
-			<input class="form__checkbox" type="checkbox" id="read" name="functions" value="read">
+			<input class="form__checkbox" type="checkbox" name="functions" id="read" value="read">
 			<label class="form__label form__label--inline" for="read">Czytanie</label>
 
-			<input class="form__checkbox" type="checkbox" id="create" name="functions" value="create">
+			<input class="form__checkbox" type="checkbox" name="functions" id="create" value="create">
 			<label class="form__label form__label--inline" for="create">Tworzenie</label>
 
-			<input class="form__checkbox" type="checkbox" id="edit" name="functions" value="edit">
+			<input class="form__checkbox" type="checkbox" name="functions" id="edit" value="edit">
 			<label class="form__label form__label--inline" for="edit">Edytowanie</label>
 
-			<input class="form__checkbox" type="checkbox" id="delete" name="functions" value="delete">
+			<input class="form__checkbox" type="checkbox" name="functions" id="delete" value="delete">
 			<label class="form__label form__label--inline" for="delete">Usuwanie</label>
 		</div>
 
@@ -123,13 +127,13 @@
 				- value - może być to samo co w id, po zaznaczeniu ta wartość jest przesyłana w grupie którą tworzy name
 				zazwyczaj najpierw jest input a po nim etykieta 
 			-->
-			<input class="form__radio" type="radio" id="admin" name="roles" value="admin">
+			<input class="form__radio" type="radio" name="roles" id="admin" value="admin">
 			<label class="form__label form__label--inline" for="admin">Administrator</label>
 
-			<input class="form__radio" type="radio" id="mod" name="roles" value="mod">
+			<input class="form__radio" type="radio" name="roles" id="mod" value="mod">
 			<label class="form__label form__label--inline" for="mod">Moderator</label>
 
-			<input class="form__radio" type="radio" id="user" name="roles" value="user">
+			<input class="form__radio" type="radio" name="roles" id="user" value="user">
 			<label class="form__label form__label--inline" for="user">Użyszkodnik</label>
 		</div>
 
