@@ -1,0 +1,33 @@
+/* nadanie stylu dla wszystkich elementów div */
+div {
+    background-color: red;
+    font-size: 25px;
+}
+
+ul {
+    font-size: 20px;
+}
+
+/* nadanie stylu dla wszystkich elementów ul mających atrybut class="list-two" */
+ul.list-two {
+    font-weight: bold;
+}
+
+/* nadanie stylu dla wszystkich elementów ul mających atrybut class="list-two" 
+		oraz wewnątrz jest element z klasą li-one*/
+ul.list-one .li-one {
+    font-weight: bold;
+    background-color: blue;
+}
+
+/* nadanie stylu dla elementów mających atrybut class 
+		na całej stronie może być wiele elementów z taką samą klasą*/
+.title-center {
+    text-align: center;
+}
+
+/* nadanie stylu dla elementów mających atrybut id
+		na całej stronie może być tylko 1 element z takim samym id */
+#save {
+    font-size: 40px;
+}

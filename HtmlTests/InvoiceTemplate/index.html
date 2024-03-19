@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/bootstrap.css" type="text/css">
+	<link rel="stylesheet" href="./css/style.css" type="text/css">
+	<title>Szablon faktury</title>
+</head>
+
+<body>
+	<div class="container invoice-font">
+
+		<div class="row mt-5">
+			<div class="col-12 header-font mt-5">
+				<div>Faktura</div>
+				<div>Nr FA/01/2023</div>
+			</div>
+		</div>
+
+		<div class="row mt-5">
+			<div class="col-5">
+				<img src="./images/logo.png" alt="logo" class="logo">
+			</div>
+			<div class="col-4 offset-3">
+				<div class="top-line">
+					<div class="top-small-caption">
+						Data sprzedaży:
+					</div>
+					<div>
+						12-01-2023
+					</div>
+				</div>
+				<div class="top-line">
+					<div class="top-small-caption">
+						Termin zapłaty:
+					</div>
+					<div>
+						12-02-2023
+					</div>
+				</div>
+				<div class="top-line">
+					<div class="top-small-caption">
+						Sposób zapłaty:
+					</div>
+					<div>
+						Przelew
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row mt-5">
+			<div class="col-5">
+				<div class="top-line">
+					<div class="top-small-caption">
+						Sprzedawca:
+					</div>
+					<div>Nazwa sprzedawcy</div>
+					<div>ul. Jakaś Ulica 666/13</div>
+					<div>13-666 Hel</div>
+					<div>E-mail: mail@mail.com</div>
+				</div>
+			</div>
+			<div class="col-5 offset-2">
+				<div class="top-line">
+					<div class="top-small-caption">
+						Nabywca:
+					</div>
+					<div>Nazwa nabywcy</div>
+					<div>ul. Jakaś Inna Ulica 666/13</div>
+					<div>66-313 Miasto</div>
+					<div>E-mail: mail2@mail.com</div>
+				</div>
+			</div>
+		</div>
+
+		<table class="table table-bordered mt-5">
+			<thead>
+				<tr>
+					<th>Lp</th>
+					<th>Produkt</th>
+					<th>Ilość</th>
+					<th>Wartość</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Pozycja 1</td>
+					<td>12</td>
+					<td>1000,00 zł</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Pozycja 2</td>
+					<td>24</td>
+					<td>2000,00 zł</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Pozycja 3</td>
+					<td>48</td>
+					<td>3000,00 zł</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Pozycja 4</td>
+					<td>64</td>
+					<td>4000,00 zł</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="row">
+			<div class="col-5">
+				<div class="text-left">Uwagi: Różne wprowadzone uwagi</div>
+			</div>
+			<div class="col-5 offset-2">
+				<div class="text-right">Wartość: <strong>6666,13 zł</strong></div>
+			</div>
+		</div>
+
+		<div class="row mt-5">
+			<div class="col-5">
+				<div>Wystawił:</div>
+				<div>Nazwa wystawiającego</div>
+				<div>...............................</div>
+			</div>
+			<div class="col-5 offset-2">
+				<div>Odebrał:</div>
+				<div>Nazwa odbierającego</div>
+				<div>...............................</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>
