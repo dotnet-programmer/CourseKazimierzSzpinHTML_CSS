@@ -1,0 +1,59 @@
+@import "./normalize.css";
+
+:root {
+
+}
+
+*, *::after, *::before {
+   box-sizing: border-box;
+} 
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   font-size: 2rem;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+/* hero */
+
+.hero {
+   max-width: 1140px;
+   margin: 0 auto;
+   height: 100%;
+   min-height: 100vh;
+
+   display: grid;
+   grid-template-columns: 1fr;
+
+   justify-items: center;
+   align-items: center;
+
+   padding: 30px;
+}
+
+.hero__image {
+   max-width: 100%;
+   border-radius: 10px;
+}
+
+.hero__heading {
+   font-size: 4rem;
+   margin-top: 0;
+   text-align: center;
+}
+
+.hero__svg {
+    margin: 5rem;
+    width: 220px;
+}
+
+@media screen and (min-width: 768px)  {
+   .hero {
+       grid-template-columns: 1fr 1fr;
+   }
+}
+

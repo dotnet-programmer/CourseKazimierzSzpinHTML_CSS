@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obrazki</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <img class="hero__svg" src="/images/simple-svg.svg" alt="foto" />
+
+    <section class="hero">
+      <div class="hero_row">
+        <h2 class="hero__heading">Testowanie obrazków</h2>
+      </div>
+      <div class="hero_row">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="/images/foto-big.webp" />
+          <source
+            media="(min-width: 768px)"
+            srcset="/images/foto-medium.webp"
+          />
+          <img class="hero__image" src="images/foto-small.webp" alt="Foto" />
+        </picture>
+      </div>
+    </section>
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eius fugit
+    quam corrupti ex dignissimos quidem expedita iusto ad dicta recusandae
+    necessitatibus, accusamus quos adipisci veniam iure dolores dolor
+    exercitationem? Dicta unde placeat, odit quasi iste quam in eligendi
+    possimus veritatis, fugit quo corporis fugiat molestias dolorem neque.
+    Ratione, accusamus dolorum! Exercitationem fuga facere itaque sed incidunt
+    sequi pariatur aperiam! Quidem libero at deserunt deleniti autem! Maxime
+    impedit necessitatibus eveniet, incidunt exercitationem suscipit maiores
+    iusto qui odio rem consectetur explicabo aliquid cupiditate similique quas
+    quasi molestiae quos molestias! Odio deserunt quia facere dolores
+    architecto, inventore perferendis mollitia dicta. Voluptatibus, aut.
+
+    <!-- <script>
+      window.onload = function () {
+        document.getElementsByClassName("hero__image")[0].src =
+          "/images/foto-big.webp";
+      };
+    </script> -->
+  </body>
+</html>
